@@ -1,0 +1,212 @@
+[
+  {
+    "ID": 1,
+    "name": "Casco Combat",
+    "price": "45$",
+    "images": [
+      "Accesorios/CascoCombat.png",
+      "Accesorios/CascoCombatNegro.png"
+    ]
+  },
+  {
+    "ID": 2,
+    "name": "Base antirresbalante para pata lateral de Moto",
+    "price": "2.49$",
+    "images": [
+      "Accesorios/BaseAntirresbalanteAzul.png",
+      "Accesorios/BaseAntirresbalanteRojo.png",
+      "Accesorios/BaseAntirresbalanteNegra.png"
+    ]
+  },
+  {
+    "ID": 3,
+    "name": "Chapaletas guardabarros para moto universal Fox",
+    "price": "1.55$",
+    "images": [
+      "Accesorios/ChapaletasFox.png",
+      "Accesorios/GuardabarroAzulFox.png",
+      "Accesorios/GuardabarroFoxBlanco.png",
+      "Accesorios/GuardabarroFoxVerde.png"
+    ]
+  },
+  {
+    "ID": 4,
+    "name": "Chapaletas guardabarros para moto universal Empire",
+    "price": "1.55$",
+    "images": [
+      "Accesorios/ChapaletasEmpire.jpg"
+    ]
+  },
+  {
+    "ID": 5,
+    "name": "Chapaletas guardabarros para moto universal Bera",
+    "price": "1.55$",
+    "images": [
+      "Accesorios/ChapaletasBera.jpg"
+    ]
+  },
+  {
+    "ID": 6,
+    "name": "Gomas Anti rayones laterales para tanque de gasolina de moto",
+    "price": "11.99$",
+    "images": [
+      "Accesorios/GomaAntirayones.png"
+    ]
+  },
+  {
+    "ID": 7,
+    "name": "Defensas laterales para Moto",
+    "price": "14$",
+    "images": [
+      "Accesorios/DefensasLateralesAzul.png",
+      "Accesorios/DefensasLateralesRojo.png",
+      "Accesorios/DefensasLateralesNegro.png"
+    ]
+  },
+  {
+    "ID": 8,
+    "name": "Porta Maleta para Moto azul, rojo y negro",
+    "price": "7.49$",
+    "images": [
+      "Accesorios/PortaMaletaAzul.png",
+      "Accesorios/PortaMaletaRojo.png",
+      "Accesorios/PortaMaletaNegro.png"
+    ]
+  },
+  {
+    "ID": 9,
+    "name": "Sistema de alarma para moto",
+    "price": "15.99$",
+    "images": [
+      "Accesorios/AlarmaParaMoto.png"
+    ]
+  },
+  {
+    "ID": 10,
+    "name": "Llave con dado saca bujia para moto 19mm",
+    "price": "2.40$",
+    "images": [
+      "Accesorios/SacaBujiaUnDado.png"
+    ]
+  },
+  {
+    "ID": 11,
+    "name": "Saca bujia dos dados para moto 16 mm and 21mm",
+    "price": "2.99$",
+    "images": [
+      "Accesorios/SacaBujiaDosDados.png"
+    ]
+  },
+  {
+    "ID": 12,
+    "name": "Filtro de gasolina para moto universal",
+    "price": "0.33$ c/u",
+    "images": [
+      "Accesorios/FiltroDeGasolina.png"
+    ]
+  },
+  {
+    "ID": 13,
+    "name": "Sliders para eje delantero de moto color azul.",
+    "price": "3.5$",
+    "images": [
+      "Accesorios/SlidersAzul.png",
+      "Accesorios/SlidersAzul.png",
+      "Accesorios/SlidersRojo.png"
+    ]
+  },
+  {
+    "ID": 14,
+    "name": "Deditos Fluorescentes Tapa Bujias",
+    "price": "2.4$",
+    "images": [
+      "Accesorios/DeditosTapaBujia.png",
+      "Accesorios/EjemploDeditosTapaBujia.png"
+    ]
+  },
+  {
+    "ID": 15,
+    "name": "Candado tranca Disco Anti-robo para moto/bicicleta negro",
+    "price": "4.5$",
+    "images": [
+      "Accesorios/TrancaDiscoAntiRoboNegro.png",
+      "Accesorios/TrancaDiscoAntiRoboDorado.jpg",
+      "Accesorios/TrancaDiscoAntiRoboPlateado.png",
+      "Accesorios/TrancaDiscoAntiRoboRojo.png"
+    ]
+  },
+  {
+    "ID": 16,
+    "name": "Faro Exploarador Rectangular Led (18 W luz blanca o amarilla)",
+    "price": "8$",
+    "images": [
+      "Accesorios/FaroExploradorLEDtreslupaswebsite.jpg"
+    ]
+  },
+  {
+    "ID": 17,
+    "name": "Bombillo led Extra Plano Función intermitente (Luz Blanca, Amarilla, Roja, Azul)\n\n",
+    "price": "1$",
+    "images": [
+      "Accesorios/BombilloledExtraPlanoFunciónintermitente.png",
+      "Accesorios/BombilloledExtraPlanoFunciónintermitenteamarilla.png",
+      "Accesorios/BombilloledExtraPlanoFunciónintermitenteblanca.png",
+      "Accesorios/BombilloledExtraPlanoFunciónintermitenteazul.png",
+      "Accesorios/BombilloledExtraPlanoFunciónintermitenterojo.png"
+    ]
+  },
+  {
+    "ID": 18,
+    "name": "Malla Elástica con ganchos sujetadores 40x40cm para motos",
+    "price": "1.5$",
+    "images": [
+      "Accesorios/Mallaparamoto.png",
+      "Accesorios/Motoconmalla.png"
+    ]
+  },
+  {
+    "ID": 19,
+    "name": "Tornillos con arandelas decorativas tipo tunning para moto azul",
+    "price": "0.5$ x2 unidades",
+    "images": [
+      "Accesorios/Tornillostunningazul.png",
+      "Accesorios/Tornillostunningplateado.png",
+      "Accesorios/Tornillostunningrojo.png",
+      "Accesorios/Tornillostunningmorado.png",
+      "Accesorios/Tornillostunningnegro.png",
+      "Accesorios/Tornillostunningverde.png"
+    ]
+  },
+  {
+    "ID": 20,
+    "name": "Barra de Volante de colores para moto",
+    "price": "3.5$",
+    "images": [
+      "Accesorios/Barradevolante.png"
+    ]
+  },
+  {
+    "ID": 21,
+    "name": "Set de dos luces Ojos de ángel",
+    "price": "8$",
+    "images": [
+      "Accesorios/Lucesojodeangel.png"
+    ]
+  },
+  {
+    "ID": 22,
+    "name": "Pintura en Spray para moto",
+    "price": "4.5$",
+    "images": [
+      "Accesorios/Pinturaenaerosol.png"
+    ]
+  },
+  {
+    "ID": 23,
+    "name": "Forro para moto",
+    "price": "3.5$",
+    "images": [
+      "Accesorios/forrodemoto.png"
+    ]
+  }
+]

@@ -1,101 +1,257 @@
-import Image from "next/image";
+'use client'; // Enable client-side features (onClick, useState, etc.)
 
-export default function Home() {
+import { useState } from 'react';
+import products from '../data/productos.json'; // Adjust path as needed
+import ProductCard from './product_card';
+import SlideMenu from './Slidemenu';
+
+export default function MyMenu() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-8 row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
-          <li className="mb-2">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] px-1 py-0.5 rounded font-semibold">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li>Save and see your changes instantly.</li>
-        </ol>
+    <>
+      {/* Slide-in Menu (Hamburger + Overlay) */}
+      <SlideMenu />
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+      {/* Main Content */}
+      <main style={{ fontFamily: 'sans-serif' }}>
+        {/* HERO SECTION */}
+        <section
+          style={{
+            position: 'relative',
+            minHeight: '500px',
+            color: '#fff',
+            backgroundColor: 'black',
+            backgroundImage: 'url("/images/guyforbackground.png")',
+            backgroundSize: 'cover',
+            backgroundPosition: 'center',
+            backgroundRepeat: 'no-repeat',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            textAlign: 'center',
+            padding: '50px 20px',
+          }}
+        >
+          {/* Optional dark overlay */}
+          <div
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              backgroundColor: 'rgba(0,0,0,0.4)',
+              zIndex: 1,
+            }}
+          />
+
+          {/* HERO CONTENT */}
+          <div style={{ position: 'relative', zIndex: 2, maxWidth: '800px' }}>
+            <h1 style={{ fontSize: '5rem', fontFamily: '"Reesha", cursive', marginBottom: '20px' }}>
+              VORTIX
+            </h1>
+            <p style={{ fontSize: '1.2rem', lineHeight: '1.5', marginBottom: '50px' }}>
+              En Vortix somos una empresa dedicada a ofrecer accesorios y repuestos
+              de alta calidad, pensados para potenciar el estilo y la funcionalidad
+              de tu moto. Con un enfoque innovador y personalizado, te asesoramos
+              en cada paso para que encuentres justo lo que necesitas.
+            </p>
+            <a
+              href="https://wa.me/584147516607?text=Vi%20tu%20página%20web%20y%20me%20interesa%20"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                display: 'inline-block',
+                backgroundColor: '#818d8d',
+                color: '#fff',
+                padding: '12px 24px',
+                borderRadius: '50px',
+                textDecoration: 'none',
+                fontWeight: 'bold',
+              }}
+            >
+              Contactar
+            </a>
+          </div>
+        </section>
+
+        {/* PRODUCTS SECTION */}
+        <section
+          id="products"
+          style={{
+            padding: '20px',
+            maxWidth: '1200px',
+            margin: '0 auto',
+          }}
+        >
+          <h2
+            style={{
+              fontSize: '5rem',
+              marginBottom: '20px',
+              fontFamily: 'Reesha, cursive',
+              textAlign: 'center',
+            }}
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:min-w-44"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+            Accesorios
+          </h2>
+
+          <div
+            style={{
+              display: 'grid',
+              gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
+              gap: '20px',
+            }}
           >
-            Read our docs
-          </a>
-        </div>
+            {products.map((product) => (
+              <ProductCard key={product.ID} product={product} />
+            ))}
+          </div>
+        </section>
       </main>
-      <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+
+      {/* FOOTER */}
+      <footer>
+        <section 
+       id="contact"
+        style={{
+          backgroundColor: '#818d8d',
+          padding: '40px 20px',
+        }}
         >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
+        {/* Center content, limit max width */}
+        <div
+          style={{
+            maxWidth: '1200px',
+            margin: '0 auto',
+            display: 'flex',
+            alignItems: 'flex-start',
+            justifyContent: 'space-between',
+            flexWrap: 'nowrap', // Change to 'wrap' if you want it responsive on small screens
+          }}
         >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
+          {/* Left Column: Logo */}
+          <div style={{ flex: '0 0 auto' }}>
+            <img
+              src="/Vortixlogo/VortixLogonobackground.png"
+              alt="VORTIX Footer Logo"
+              style={{ width: '250px', height: 'auto', objectFit: 'contain' }}
+            />
+          </div>
+
+          {/* Right Column: Contact Info */}
+          <div style={{ flex: '1 1 auto', marginLeft: '40px' }}>
+            <h2
+              style={{
+                color: '#000',
+                fontSize: '3rem',
+                fontFamily: '"Reesha", cursive',
+                marginBottom: '20px',
+              }}
+            >
+              Contáctanos
+            </h2>
+
+            {/* Dirección */}
+            <p style={{ color: '#000', margin: '0px 3px' }}>
+              <strong>Dirección:</strong>{' '}
+              <a
+                href="https://www.google.com/maps/place/Vortix/@7.7992701,-72.2417878,18z/data=..."
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: '#fff', textDecoration: 'none' }}
+              >
+                Barrancas Parte Alta Calle El Mirador #1-18
+              </a>
+            </p>
+
+            {/* Correo electrónico */}
+            <p style={{ color: '#000', margin: '0px 3px' }}>
+              <strong>Correo electrónico:</strong>{' '}
+              <a
+                href="mailto:vortixaccesoriosyrepuestos@gmail.com"
+                style={{ color: '#fff', textDecoration: 'none' }}
+              >
+                vortixaccesoriosyrepuestos@gmail.com
+              </a>
+            </p>
+
+            {/* Número telefónico */}
+            <p style={{ color: '#000', margin: '0px 3px' }}>
+              <strong>Número telefónico:</strong>{' '}
+              <a
+                href="https://wa.me/584147516607?text=Vi%20tu%20página%20web%20y%20me%20interesa%20"
+                target="_blank"
+                rel="noopener noreferrer"
+                style={{ color: '#fff', textDecoration: 'none' }}
+              >
+                +58 414-7516607
+              </a>
+            </p>
+
+            {/* Follow Us */}
+            <div style={{ textAlign: 'left' }}>
+              <h2
+                style={{
+                  color: '#000',
+                  fontSize: '1.5rem',
+                  marginTop: '30px',
+                  fontFamily: '"Reesha", cursive',
+                }}
+              >
+Síguenos              </h2>
+
+              <div style={{ display: 'flex', gap: '20px' }}>
+                {/* Facebook Icon */}
+                <a
+                  href="https://www.facebook.com/profile.php?id=61572657137720&mibextid=ZbWKwL"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    borderRadius: '50%',
+                    width: '40px',
+                    height: '40px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    textDecoration: 'none',
+                  }}
+                >
+                  <img
+                    src="/images/fbicon.jpg"
+                    alt="Facebook"
+                    style={{ width: '40px', height: '40px' }}
+
+                  />
+                </a>
+
+                {/* Instagram Icon */}
+                <a
+                  href="https://www.instagram.com/vortixpartsandaccesories?igsh=MW1rMWJxMWpsYzV4dw=="
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  style={{
+                    borderRadius: '50%',
+                    width: '40px',
+                    height: '40px',
+                    display: 'flex',
+                    alignItems: 'center',
+                    justifyContent: 'center',
+                    textDecoration: 'none',
+                  }}
+                >
+                  <img
+                    src="/images/iglogo.png"
+                    alt="Instagram"
+                    style={{ width: '40px', height: '40px' }}
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </section>
       </footer>
-    </div>
+    </>
   );
 }

@@ -1,2 +1,0 @@
-# Vortix
-Vortix website

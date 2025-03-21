@@ -5,6 +5,7 @@ import Image from 'next/image';
 
 export default function SlideMenu() {
   const [menuOpen, setMenuOpen] = useState(false);
+  const basePath = process.env.NODE_ENV === 'production' ? '/my-portfolio' : '';
 
   const toggleMenu = () => {
     setMenuOpen((prev) => !prev);
@@ -24,7 +25,7 @@ export default function SlideMenu() {
           height: '30px',
           display: 'flex',
           alignItems: 'center',
-          justifyContent: 'center', // Centers logo horizontally
+          justifyContent: 'center',
         }}
       >
         {/* HAMBURGER / X TOGGLE BUTTON */}
@@ -86,7 +87,7 @@ export default function SlideMenu() {
         {/* LOGO (CENTER) */}
         <div>
           <Image
-            src="/Vortix/Vortixlogo/VortixLogonobackground.png" // Same logo path
+            src={`${basePath}/Vortixlogo/VortixLogonobackground.png`}
             alt="VORTIX Logo"
             width={80}
             height={80}
@@ -100,10 +101,10 @@ export default function SlideMenu() {
       <div
         style={{
           position: 'fixed',
-          top: '80px', // Immediately below the header
+          top: '80px',
           left: 0,
           width: '100%',
-          height: '50vh', // Half of the viewport height
+          height: '50vh',
           backgroundColor: '#818d8d',
           color: '#fff',
           transform: menuOpen ? 'translateY(0)' : 'translateY(-50vh)',
@@ -112,7 +113,6 @@ export default function SlideMenu() {
           padding: '20px',
         }}
       >
-        {/* NAVIGATION LINKS as a vertical list */}
         <nav
           style={{
             display: 'flex',

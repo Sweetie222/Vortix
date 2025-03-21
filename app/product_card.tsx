@@ -56,7 +56,7 @@ export default function ProductCard({ product }: { product: Product }) {
             }}
           >
             <Image
-              src={`/${images[currentIndex]}`} // Show current image
+              src={`/Vortix/${images[currentIndex]}`} // Show current image
               alt={name}
               fill
               style={{ objectFit: 'contain' }}

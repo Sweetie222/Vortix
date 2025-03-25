@@ -112,12 +112,14 @@ export default function MyMenu() {
       </main>
 
       {/* FOOTER */}
-      <footer
+      <footer>
+        <section 
+       id="contact"
         style={{
           backgroundColor: '#818d8d',
           padding: '40px 20px',
         }}
-      >
+        >
         {/* Center content, limit max width */}
         <div
           style={{
@@ -132,7 +134,7 @@ export default function MyMenu() {
           {/* Left Column: Logo */}
           <div style={{ flex: '0 0 auto' }}>
             <img
-              src="/Vortixlogo/VortixLogonobackground.png"
+              src="/Vortix/Vortixlogo/VortixLogonobackground.png"
               alt="VORTIX Footer Logo"
               style={{ width: '250px', height: 'auto', objectFit: 'contain' }}
             />
@@ -198,8 +200,7 @@ export default function MyMenu() {
                   fontFamily: '"Reesha", cursive',
                 }}
               >
-                Follow us
-              </h2>
+Síguenos              </h2>
 
               <div style={{ display: 'flex', gap: '20px' }}>
                 {/* Facebook Icon */}
@@ -218,9 +219,10 @@ export default function MyMenu() {
                   }}
                 >
                   <img
-                    src="/images/fbicon.jpg"
+                    src="/Vortix/images/fbicon.jpg"
                     alt="Facebook"
                     style={{ width: '40px', height: '40px' }}
+
                   />
                 </a>
 
@@ -240,7 +242,7 @@ export default function MyMenu() {
                   }}
                 >
                   <img
-                    src="/images/iglogo.png"
+                    src="/Vortix/images/iglogo.png"
                     alt="Instagram"
                     style={{ width: '40px', height: '40px' }}
                   />
@@ -249,6 +251,7 @@ export default function MyMenu() {
             </div>
           </div>
         </div>
+        </section>
       </footer>
     </>
   );

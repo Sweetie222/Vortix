@@ -20,8 +20,8 @@ export default function SlideMenu() {
           left: 0,
           width: '100%',
           zIndex: 9999,
-          backgroundColor: '#818d8d',
-          height: '80px',
+          backgroundColor: '#fff',
+          height: '30px',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center', // Centers logo horizontally
@@ -86,11 +86,12 @@ export default function SlideMenu() {
         {/* LOGO (CENTER) */}
         <div>
           <Image
-            src="/Vortix logo/VortixLogonobackground.png" // Same logo path
+            src="/Vortix/Vortixlogo/VortixLogonobackground.png" // Same logo path
             alt="VORTIX Logo"
             width={80}
             height={80}
             style={{ objectFit: 'contain' }}
+            unoptimized={true}
           />
         </div>
       </header>

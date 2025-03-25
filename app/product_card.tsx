@@ -146,50 +146,35 @@ export default function ProductCard({ product }: { product: Product }) {
         </p>
       </div>
 
-      {/* Bottom Section: Buttons */}
+      {/* Bottom Section: Buttons (side-by-side, centered) */}
       <div
         style={{
           display: 'flex',
-          justifyContent: 'center',
+          justifyContent: 'center', // Centers horizontally
           gap: '10px',
-          marginTop: 'auto',
+          marginTop: 'auto', // Pushes buttons to bottom
         }}
       >
-        <button
+        <button 
           style={{
-            backgroundColor: '#000',
+            width: '50%',
+            backgroundColor: '#818d8d',
             color: '#fff',
             border: 'none',
-            borderRadius: '4px',
-            padding: '10px 20px',
+            borderRadius: '50px',
+            padding: '10px',
             cursor: 'pointer',
             fontWeight: 'bold',
+            marginBottom: 'auto',
           }}
           onClick={() => {
             window.open(
-              `https://wa.me/584147516607?text=I'm%20interested%20in%20${encodeURIComponent(
-                product.name
-              )}`,
+              `https://wa.me/584147516607?text=Me%20gustaría%20saber%20más%20información%20de%20${encodeURIComponent(product.name)}`,
               '_blank'
             );
           }}
         >
           Comprar
-        </button>
-
-        <button
-          style={{
-            backgroundColor: '#f0f0f0',
-            color: '#333',
-            border: 'none',
-            borderRadius: '4px',
-            padding: '10px 20px',
-            cursor: 'pointer',
-            fontWeight: 'bold',
-          }}
-          onClick={() => alert(`View Details for ${product.name}`)}
-        >
-          Ver detalles
         </button>
       </div>
     </div>

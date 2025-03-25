@@ -1,6 +1,7 @@
 'use client';
 
 import { useState } from 'react';
+import { Analytics } from "@vercel/analytics/react"
 import products from '../data/productos.json'; // Adjust path as needed
 import ProductCard from './product_card';
 import SlideMenu from './Slidemenu';
@@ -127,74 +128,80 @@ export default function MyMenu() {
 
       {/* FOOTER */}
       <footer>
-        <section 
-       id="contact"
-        style={{
-          backgroundColor: '#818d8d',
-          padding: '40px 20px',
-        }}
-        >
-        {/* Center content, limit max width */}
-        <div
+  <section 
+    id="contact"
+    style={{
+      backgroundColor: '#818d8d',
+      padding: '40px 20px',
+    }}
+  >
+   <div
+  style={{
+    maxWidth: '1200px',
+    margin: '0 auto',
+    display: 'flex',
+    alignItems: 'flex-start',
+    justifyContent: 'space-between',
+    // Force side-by-side columns:
+    flexWrap: 'nowrap',
+    // (Optional) allow horizontal scrolling if it doesn't fit:
+    overflowX: 'auto',
+  }}
+>
+      {/* Left Column: Logo */}
+      <div style={{ flex: '0 0 auto', marginBottom: '20px' }}>
+        <img
+          src="/Vortixlogo/VortixLogonobackground.png"
+          alt="VORTIX Footer Logo"
+          style={{ width: '250px', height: 'auto', objectFit: 'contain' }}
+        />
+      </div>
+
+      {/* Right Column: Contact Info */}
+      <div style={{ 
+        flex: '1 1 auto', 
+        marginLeft: '40px',
+        // Optional: set a minimum width to avoid text cramming
+        minWidth: '250px',
+      }}>
+        <h2
           style={{
-            maxWidth: '1200px',
-            margin: '0 auto',
-            display: 'flex',
-            alignItems: 'flex-start',
-            justifyContent: 'space-between',
-            flexWrap: 'nowrap', // Change to 'wrap' if you want it responsive on small screens
+            color: '#000',
+            fontSize: '3rem',
+            fontFamily: '"Reesha", cursive',
+            marginBottom: '20px',
           }}
         >
-          {/* Left Column: Logo */}
-          <div style={{ flex: '0 0 auto' }}>
-            <img
-              src="/Vortixlogo/VortixLogonobackground.png"
-              alt="VORTIX Footer Logo"
-              style={{ width: '250px', height: 'auto', objectFit: 'contain' }}
-            />
-          </div>
-
-          {/* Right Column: Contact Info */}
-          <div style={{ flex: '1 1 auto', marginLeft: '40px' }}>
-            <h2
-              style={{
-                color: '#000',
-                fontSize: '3rem',
-                fontFamily: '"Reesha", cursive',
-                marginBottom: '20px',
-              }}
-            >
-              Contáctanos
-            </h2>
+          Contáctanos
+        </h2>
 
             {/* Dirección */}
             <p style={{ color: '#000', margin: '0px 3px' }}>
-              <strong>Dirección:</strong>{' '}
-              <a
+              <strong>Dirección:</strong>{' '} </p>
+              <p><a
                 href="https://www.google.com/maps/place/Vortix/@7.7992701,-72.2417878,18z/data=..."
                 target="_blank"
                 rel="noopener noreferrer"
                 style={{ color: '#fff', textDecoration: 'none' }}
               >
                 Barrancas Parte Alta Calle El Mirador #1-18
-              </a>
-            </p>
+              </a></p>
+            
 
             {/* Correo electrónico */}
             <p style={{ color: '#000', margin: '0px 3px' }}>
-              <strong>Correo electrónico:</strong>{' '}
-              <a
+              <strong>Correo electrónico:</strong>{' '}</p>
+              <p><a
                 href="mailto:vortixaccesoriosyrepuestos@gmail.com"
                 style={{ color: '#fff', textDecoration: 'none' }}
               >
                 vortixaccesoriosyrepuestos@gmail.com
-              </a>
-            </p>
+              </a> </p>
 
             {/* Número telefónico */}
             <p style={{ color: '#000', margin: '0px 3px' }}>
-              <strong>Número telefónico:</strong>{' '}
-              <a
+              <strong>Número telefónico:</strong>{' '}</p>
+             <p> <a
                 href="https://wa.me/584147516607?text=Vi%20tu%20página%20web%20y%20me%20interesa%20"
                 target="_blank"
                 rel="noopener noreferrer"

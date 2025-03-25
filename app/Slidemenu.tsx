@@ -21,7 +21,7 @@ export default function SlideMenu() {
           width: '100%',
           zIndex: 9999,
           backgroundColor: '#818d8d',
-          height: '80px',
+          height: '50px', // Reduced from 80px
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center', // Centers logo horizontally
@@ -35,12 +35,12 @@ export default function SlideMenu() {
             background: 'none',
             border: 'none',
             position: 'absolute',
-            left: '20px',
+            left: '25px',
             top: '50%',
             transform: 'translateY(-50%)',
             cursor: 'pointer',
-            width: '40px',
-            height: '40px',
+            width: '30px', // Reduced from 40px
+            height: '20px', // Reduced from 40px
             display: 'flex',
             flexDirection: 'column',
             justifyContent: 'space-between',
@@ -51,11 +51,11 @@ export default function SlideMenu() {
           <span
             style={{
               width: '100%',
-              height: '4px',
+              height: '2px', // Reduced from 4px
               backgroundColor: '#fff',
               transition: '0.3s',
               transform: menuOpen
-                ? 'rotate(45deg) translate(5px, 5px)'
+                ? 'rotate(50deg) translate(2.5px, 13px)'
                 : 'none',
             }}
           />
@@ -63,7 +63,7 @@ export default function SlideMenu() {
           <span
             style={{
               width: '100%',
-              height: '4px',
+              height: '2px', // Reduced from 4px
               backgroundColor: '#fff',
               transition: '0.3s',
               opacity: menuOpen ? 0 : 1,
@@ -73,11 +73,11 @@ export default function SlideMenu() {
           <span
             style={{
               width: '100%',
-              height: '4px',
+              height: '2px', // Reduced from 4px
               backgroundColor: '#fff',
               transition: '0.3s',
               transform: menuOpen
-                ? 'rotate(-45deg) translate(5px, -5px)'
+                ? 'rotate(-50deg) translate(0px, -13px)'
                 : 'none',
             }}
           />
@@ -88,27 +88,29 @@ export default function SlideMenu() {
           <Image
             src="/Vortixlogo/VortixLogonobackground.png" // Same logo path
             alt="VORTIX Logo"
-            width={80}
-            height={80}
+            width={50} // Reduced from 80
+            height={50} // Reduced from 80
             style={{ objectFit: 'contain' }}
           />
         </div>
       </header>
 
-      {/* DROPDOWN MENU PANEL (Vertical, half screen) */}
+      {/* DROPDOWN MENU PANEL (Full viewport) */}
       <div
         style={{
-          position: 'fixed',
-          top: '80px', // Immediately below the header
+          position: 'fixed', // Changed from absolute
+          top: 0,
           left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: 'rgba(0,0,0,0.5)',
           width: '100%',
-          height: '50vh', // Half of the viewport height
-          backgroundColor: '#818d8d',
+          height: '50vh', // Changed from '0vh' to full viewport height
           color: '#fff',
           transform: menuOpen ? 'translateY(0)' : 'translateY(-50vh)',
           transition: 'transform 0.3s ease-in-out',
           zIndex: 9998,
-          padding: '20px',
+          padding: '90px 35px', // Added padding
         }}
       >
         {/* NAVIGATION LINKS as a vertical list */}

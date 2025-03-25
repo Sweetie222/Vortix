@@ -1,4 +1,4 @@
-'use client'; // Enable client-side features (onClick, useState, etc.)
+'use client';
 
 import { useState } from 'react';
 import products from '../data/productos.json'; // Adjust path as needed
@@ -19,7 +19,10 @@ export default function MyMenu() {
         <section
           style={{
             position: 'relative',
-            minHeight: '500px',
+            // Make hero taller:
+            minHeight: '600px',
+            // Push content below the header:
+            marginTop: '50px',
             color: '#fff',
             backgroundColor: 'black',
             backgroundImage: 'url("/images/guyforbackground.png")',
@@ -30,7 +33,7 @@ export default function MyMenu() {
             alignItems: 'center',
             justifyContent: 'center',
             textAlign: 'center',
-            padding: '50px 20px',
+            padding: '100px 100px',
           }}
         >
           {/* Optional dark overlay */}
@@ -48,10 +51,22 @@ export default function MyMenu() {
 
           {/* HERO CONTENT */}
           <div style={{ position: 'relative', zIndex: 2, maxWidth: '800px' }}>
-            <h1 style={{ fontSize: '5rem', fontFamily: '"Reesha", cursive', marginBottom: '20px' }}>
+            <h1
+              style={{
+                fontSize: '5rem',
+                fontFamily: '"Reesha", cursive',
+                marginBottom: '20px',
+              }}
+            >
               VORTIX
             </h1>
-            <p style={{ fontSize: '1.2rem', lineHeight: '1.5', marginBottom: '50px' }}>
+            <p
+              style={{
+                fontSize: '1.2rem',
+                lineHeight: '1.5',
+                marginBottom: '50px',
+              }}
+            >
               En Vortix somos una empresa dedicada a ofrecer accesorios y repuestos
               de alta calidad, pensados para potenciar el estilo y la funcionalidad
               de tu moto. Con un enfoque innovador y personalizado, te asesoramos

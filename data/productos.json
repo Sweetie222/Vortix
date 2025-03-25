@@ -13,9 +13,9 @@
     "name": "Base antirresbalante para pata lateral de Moto",
     "price": "2.49$",
     "images": [
-      "Accesorios/BaseAntirresbalanteazul.png",
-      "Accesorios/BaseAntirresbalanterojo.png",
-      "Accesorios/BaseAntirresbalantenegra.png"
+      "Accesorios/Baseantirresbalanteazul.png",
+      "Accesorios/Baseantirresbalanterojo.png",
+      "Accesorios/Baseantirresbalantenegra.png"
     ]
   },
   {
@@ -58,9 +58,9 @@
     "name": "Defensas laterales para Moto",
     "price": "14$",
     "images": [
-      "Accesorios/DefensasLateralesazul.png",
-      "Accesorios/DefensasLateralesrojo.png",
-      "Accesorios/DefensasLateralesnegro.png"
+      "Accesorios/Defensaslateralesazul.png",
+      "Accesorios/Defensaslateralesrojo.png",
+      "Accesorios/Defensaslateralesnegro.png"
     ]
   },
   {
@@ -111,9 +111,8 @@
     "price": "3.5$",
     "images": [
       "Accesorios/Slidersazul.png",
-      "Accesorios/Slidersazul.png",
       "Accesorios/Slidersrojo.png"
-    ]
+        ]
   },
   {
     "ID": 14,

@@ -20,8 +20,8 @@ export default function SlideMenu() {
           left: 0,
           width: '100%',
           zIndex: 9999,
-          backgroundColor: '#fff',
-          height: '30px',
+          backgroundColor: '#818d8d',
+          height: '80px',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center', // Centers logo horizontally
@@ -91,7 +91,6 @@ export default function SlideMenu() {
             width={80}
             height={80}
             style={{ objectFit: 'contain' }}
-            unoptimized={true}
           />
         </div>
       </header>

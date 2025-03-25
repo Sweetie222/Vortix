@@ -1,7 +1,6 @@
 'use client'; // Enable client-side features (onClick, useState, etc.)
 
 import { useState } from 'react';
-import Image from 'next/image';
 import products from '../data/productos.json'; // Adjust path as needed
 import ProductCard from './product_card';
 import SlideMenu from './Slidemenu';

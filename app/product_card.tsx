@@ -169,7 +169,7 @@ export default function ProductCard({ product }: { product: Product }) {
           }}
           onClick={() => {
             window.open(
-              `https://wa.me/584147516607?text=Me%20gustaría%20saber%20más%20información%20de%20${encodeURIComponent(product.name)}`,
+              `https://wa.me/584147516607?text=Me%20gustaría%20saber%20más%20información%20acerca%20de%20${encodeURIComponent(product.name)}`,
               '_blank'
             );
           }}

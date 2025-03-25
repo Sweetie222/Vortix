@@ -86,7 +86,7 @@ export default function SlideMenu() {
         {/* LOGO (CENTER) */}
         <div>
           <Image
-            src="/Vortix/Vortixlogo/VortixLogonobackground.png" // Same logo path
+            src="/Vortixlogo/VortixLogonobackground.png" // Same logo path
             alt="VORTIX Logo"
             width={80}
             height={80}

@@ -4,8 +4,8 @@
     "name": "Casco Combat",
     "price": "45$",
     "images": [
-      "Accesorios/CascoCombat.png",
-      "Accesorios/CascoCombatNegro.png"
+      "Accesorios/Cascocombat.png",
+      "Accesorios/Cascocombatnegro.png"
     ]
   },
   {
@@ -13,9 +13,9 @@
     "name": "Base antirresbalante para pata lateral de Moto",
     "price": "2.49$",
     "images": [
-      "Accesorios/BaseAntirresbalanteAzul.png",
-      "Accesorios/BaseAntirresbalanteRojo.png",
-      "Accesorios/BaseAntirresbalanteNegra.png"
+      "Accesorios/BaseAntirresbalanteazul.png",
+      "Accesorios/BaseAntirresbalanterojo.png",
+      "Accesorios/BaseAntirresbalantenegra.png"
     ]
   },
   {
@@ -23,10 +23,10 @@
     "name": "Chapaletas guardabarros para moto universal Fox",
     "price": "1.55$",
     "images": [
-      "Accesorios/ChapaletasFox.png",
-      "Accesorios/GuardabarroAzulFox.png",
-      "Accesorios/GuardabarroFoxBlanco.png",
-      "Accesorios/GuardabarroFoxVerde.png"
+      "Accesorios/chapaletasfox.png",
+      "Accesorios/Guardabarroazulfox.png",
+      "Accesorios/Guardabarrofoxblanco.png",
+      "Accesorios/Guardabarrofoxverde.png"
     ]
   },
   {
@@ -42,7 +42,7 @@
     "name": "Chapaletas guardabarros para moto universal Bera",
     "price": "1.55$",
     "images": [
-      "Accesorios/ChapaletasBera.jpg"
+      "Accesorios/chapaletasBera.jpg"
     ]
   },
   {
@@ -50,7 +50,7 @@
     "name": "Gomas Anti rayones laterales para tanque de gasolina de moto",
     "price": "11.99$",
     "images": [
-      "Accesorios/GomaAntirayones.png"
+      "Accesorios/Gomaantirayones.png"
     ]
   },
   {
@@ -58,9 +58,9 @@
     "name": "Defensas laterales para Moto",
     "price": "14$",
     "images": [
-      "Accesorios/DefensasLateralesAzul.png",
-      "Accesorios/DefensasLateralesRojo.png",
-      "Accesorios/DefensasLateralesNegro.png"
+      "Accesorios/DefensasLateralesazul.png",
+      "Accesorios/DefensasLateralesrojo.png",
+      "Accesorios/DefensasLateralesnegro.png"
     ]
   },
   {
@@ -68,9 +68,9 @@
     "name": "Porta Maleta para Moto azul, rojo y negro",
     "price": "7.49$",
     "images": [
-      "Accesorios/PortaMaletaAzul.png",
-      "Accesorios/PortaMaletaRojo.png",
-      "Accesorios/PortaMaletaNegro.png"
+      "Accesorios/Portamaletaazul.png",
+      "Accesorios/Portamaletarojo.png",
+      "Accesorios/Portamaletanegro.png"
     ]
   },
   {
@@ -78,7 +78,7 @@
     "name": "Sistema de alarma para moto",
     "price": "15.99$",
     "images": [
-      "Accesorios/AlarmaParaMoto.png"
+      "Accesorios/Alarmaparamoto.png"
     ]
   },
   {
@@ -86,7 +86,7 @@
     "name": "Llave con dado saca bujia para moto 19mm",
     "price": "2.40$",
     "images": [
-      "Accesorios/SacaBujiaUnDado.png"
+      "Accesorios/Sacabujiaundado.png"
     ]
   },
   {
@@ -94,7 +94,7 @@
     "name": "Saca bujia dos dados para moto 16 mm and 21mm",
     "price": "2.99$",
     "images": [
-      "Accesorios/SacaBujiaDosDados.png"
+      "Accesorios/Sacabujiadosdados.png"
     ]
   },
   {
@@ -102,7 +102,7 @@
     "name": "Filtro de gasolina para moto universal",
     "price": "0.33$ c/u",
     "images": [
-      "Accesorios/FiltroDeGasolina.png"
+      "Accesorios/Filtrodegasolina.png"
     ]
   },
   {
@@ -110,9 +110,9 @@
     "name": "Sliders para eje delantero de moto color azul.",
     "price": "3.5$",
     "images": [
-      "Accesorios/SlidersAzul.png",
-      "Accesorios/SlidersAzul.png",
-      "Accesorios/SlidersRojo.png"
+      "Accesorios/Slidersazul.png",
+      "Accesorios/Slidersazul.png",
+      "Accesorios/Slidersrojo.png"
     ]
   },
   {
@@ -120,8 +120,8 @@
     "name": "Deditos Fluorescentes Tapa Bujias",
     "price": "2.4$",
     "images": [
-      "Accesorios/DeditosTapaBujia.png",
-      "Accesorios/EjemploDeditosTapaBujia.png"
+      "Accesorios/Deditostapabujia.png",
+      "Accesorios/ejemplodeditostapabujia.png"
     ]
   },
   {
@@ -129,10 +129,10 @@
     "name": "Candado tranca Disco Anti-robo para moto/bicicleta negro",
     "price": "4.5$",
     "images": [
-      "Accesorios/TrancaDiscoAntiRoboNegro.png",
-      "Accesorios/TrancaDiscoAntiRoboDorado.jpg",
-      "Accesorios/TrancaDiscoAntiRoboPlateado.png",
-      "Accesorios/TrancaDiscoAntiRoboRojo.png"
+      "Accesorios/TrancaDiscoAnti-robonegro.png",
+      "Accesorios/TrancaDiscoAntiroboDorado.jpg",
+      "Accesorios/TrancaDiscoAntiroboplateado.png",
+      "Accesorios/TrancaDiscoAntiroborojo.png"
     ]
   },
   {

@@ -134,7 +134,7 @@ export default function MyMenu() {
           {/* Left Column: Logo */}
           <div style={{ flex: '0 0 auto' }}>
             <img
-              src="/Vortix/Vortixlogo/VortixLogonobackground.png"
+              src="/Vortixlogo/VortixLogonobackground.png"
               alt="VORTIX Footer Logo"
               style={{ width: '250px', height: 'auto', objectFit: 'contain' }}
             />
@@ -219,7 +219,7 @@ Síguenos              </h2>
                   }}
                 >
                   <img
-                    src="/Vortix/images/fbicon.jpg"
+                    src="/images/fbicon.jpg"
                     alt="Facebook"
                     style={{ width: '40px', height: '40px' }}
 
@@ -242,7 +242,7 @@ Síguenos              </h2>
                   }}
                 >
                   <img
-                    src="/Vortix/images/iglogo.png"
+                    src="/images/iglogo.png"
                     alt="Instagram"
                     style={{ width: '40px', height: '40px' }}
                   />

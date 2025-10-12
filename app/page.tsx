@@ -11,33 +11,38 @@ export default function MyMenu() {
 
   return (
     <>
+      {/* Scanline Effect */}
+      <div className="scanline" />
+      
       {/* Slide-in Menu (Hamburger + Overlay) */}
       <SlideMenu />
 
       {/* Main Content */}
-      <main style={{ fontFamily: 'sans-serif' }}>
-        {/* HERO SECTION */}
+      <main style={{ position: 'relative' }}>
+        {/* HERO SECTION - Futuristic Full Screen */}
         <section
           style={{
             position: 'relative',
-            // Make hero taller:
-            minHeight: '600px',
-            // Push content below the header:
+            minHeight: '100vh',
             marginTop: '50px',
-            color: '#fff',
-            backgroundColor: 'black',
-            backgroundImage: 'url("/images/guyforbackground.png")',
-            backgroundSize: 'cover',
-            backgroundPosition: 'center',
-            backgroundRepeat: 'no-repeat',
+            color: '#000',
+            background: 'url("/images/guyforbackground.png") center top/cover no-repeat, #ffffff',
             display: 'flex',
             alignItems: 'center',
             justifyContent: 'center',
-            textAlign: 'center',
-            padding: '100px 100px',
+            textAlign: 'center',            overflow: 'hidden',
           }}
         >
-          {/* Optional dark overlay */}
+          {/* Mobile responsive styles */}
+          <style jsx>{`
+            @media (max-width: 768px) {
+              section {
+                min-height: 90vh !important;
+                padding: 60px 15px 40px !important;
+              }
+            }
+          `}</style>
+          {/* Animated Gradient Overlay */}
           <div
             style={{
               position: 'absolute',
@@ -45,28 +50,65 @@ export default function MyMenu() {
               left: 0,
               right: 0,
               bottom: 0,
-              backgroundColor: 'rgba(0,0,0,0.4)',
+              background: 'rgba(128, 128, 128, 0.3)',
               zIndex: 1,
+              pointerEvents: 'none',
+            }}
+          />
+
+          {/* Grid Overlay */}
+          <div
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              backgroundImage: 
+                'linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px)',
+              backgroundSize: '50px 50px',
+              zIndex: 1,
+              pointerEvents: 'none',
+            }}
+          />
+
+          {/* Light Streaks Effect */}
+          <div
+            style={{
+              position: 'absolute',
+              top: '-50%',
+              left: '-50%',
+              width: '200%',
+              height: '200%',
+              background: 'radial-gradient(circle, rgba(128, 128, 128, 0.1) 0%, transparent 70%)',
+              animation: 'float 8s ease-in-out infinite',
+              zIndex: 1,
+              pointerEvents: 'none',
             }}
           />
 
           {/* HERO CONTENT */}
-          <div style={{ position: 'relative', zIndex: 2, maxWidth: '800px' }}>
+          <div style={{ position: 'relative', zIndex: 2, maxWidth: '900px' }}>
             <h1
               style={{
-                fontSize: '5rem',
-                fontFamily: '"Reesha", cursive',
-                marginBottom: '20px',
+                fontSize: 'clamp(3rem, 10vw, 7rem)',
+                fontFamily: 'var(--font-audiowide)',
+                marginBottom: '30px',
+                color: '#ffffff',
+                letterSpacing: '0.1em',
               }}
             >
               VORTIX
             </h1>
             <p
               style={{
-                fontSize: '1.2rem',
-                lineHeight: '1.5',
+                fontSize: 'clamp(1rem, 2.5vw, 1.3rem)',
+                lineHeight: '1.8',
                 marginBottom: '50px',
-              }}
+                fontFamily: 'var(--font-inter)',
+                color: '#ffffff',
+                maxWidth: '700px',
+                margin: '0 auto 50px',              }}
             >
               En Vortix somos una empresa dedicada a ofrecer accesorios y repuestos
               de alta calidad, pensados para potenciar el estilo y la funcionalidad
@@ -79,12 +121,30 @@ export default function MyMenu() {
               rel="noopener noreferrer"
               style={{
                 display: 'inline-block',
-                backgroundColor: '#818d8d',
-                color: '#fff',
-                padding: '12px 24px',
-                borderRadius: '50px',
+                background: '#0080ff',
+                color: '#ffffff',
+                padding: '16px 48px',
+                borderRadius: '8px',
                 textDecoration: 'none',
-                fontWeight: 'bold',
+                fontWeight: '700',
+                fontFamily: 'var(--font-orbitron)',
+                textTransform: 'uppercase',
+                letterSpacing: '2px',
+                fontSize: 'clamp(0.9rem, 2vw, 1.1rem)',
+                border: '2px solid #0080ff',                boxShadow: '0 4px 15px rgba(0, 0, 0, 0.2)',
+                transition: 'all 0.3s ease',
+                position: 'relative',
+                overflow: 'hidden',
+              }}
+              onMouseEnter={(e) => {
+                e.currentTarget.style.boxShadow = '0 8px 25px rgba(0, 0, 0, 0.3)';
+                e.currentTarget.style.transform = 'translateY(-4px) scale(1.05)';
+                e.currentTarget.style.background = '#555555';
+              }}
+              onMouseLeave={(e) => {
+                e.currentTarget.style.boxShadow = '0 4px 15px rgba(0, 0, 0, 0.2)';
+                e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                e.currentTarget.style.background = '#666666';
               }}
             >
               Contactar
@@ -92,31 +152,50 @@ export default function MyMenu() {
           </div>
         </section>
 
-        {/* PRODUCTS SECTION */}
+        {/* PRODUCTS SECTION - Cyberpunk Grid */}
         <section
           id="products"
           style={{
-            padding: '20px',
-            maxWidth: '1200px',
+            padding: '80px 20px',
+            maxWidth: '1400px',
             margin: '0 auto',
+            position: 'relative',
+            background: '#ffffff',
           }}
         >
-          <h2
-            style={{
-              fontSize: '5rem',
-              marginBottom: '20px',
-              fontFamily: 'Reesha, cursive',
-              textAlign: 'center',
-            }}
-          >
-            Accesorios
-          </h2>
+          {/* Section Title */}
+          <div style={{ textAlign: 'center', marginBottom: '60px' }}>
+            <h2
+              style={{
+                fontSize: 'clamp(2.5rem, 8vw, 5rem)',
+                marginBottom: '20px',
+                fontFamily: 'var(--font-audiowide)',
+                textAlign: 'center',
+                color: '#000000',
+                letterSpacing: '0.05em',
+                textTransform: 'uppercase',
+              }}
+            >
+              Accesorios
+            </h2>
+            <div
+              style={{
+                width: '150px',
+                height: '3px',
+                background: '#0080ff',
+                margin: '0 auto',
+              }}
+            />
+          </div>
 
+          {/* Products Grid */}
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(250px, 1fr))',
-              gap: '20px',
+              gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
+              gap: '30px',
+              position: 'relative',
+              zIndex: 10,
             }}
           >
             {products.map((product) => (
@@ -126,152 +205,273 @@ export default function MyMenu() {
         </section>
       </main>
 
-      {/* FOOTER */}
+      {/* FOOTER - Cyberpunk Glassmorphic */}
       <footer>
-  <section 
-    id="contact"
-    style={{
-      backgroundColor: '#818d8d',
-      padding: '40px 20px',
-    }}
-  >
-   <div
-  style={{
-    maxWidth: '1200px',
-    margin: '0 auto',
-    display: 'flex',
-    alignItems: 'flex-start',
-    justifyContent: 'space-between',
-    // Force side-by-side columns:
-    flexWrap: 'nowrap',
-    // (Optional) allow horizontal scrolling if it doesn't fit:
-    overflowX: 'auto',
-  }}
->
-      {/* Left Column: Logo */}
-      <div style={{ flex: '0 0 auto', marginBottom: '20px' }}>
-        <img
-          src="/Vortixlogo/VortixLogonobackground.png"
-          alt="VORTIX Footer Logo"
-          style={{ width: '250px', height: 'auto', objectFit: 'contain' }}
-        />
-      </div>
-
-      {/* Right Column: Contact Info */}
-      <div style={{ 
-        flex: '1 1 auto', 
-        marginLeft: '40px',
-        // Optional: set a minimum width to avoid text cramming
-        minWidth: '250px',
-      }}>
-        <h2
-          style={{
-            color: '#000',
-            fontSize: '3rem',
-            fontFamily: '"Reesha", cursive',
-            marginBottom: '20px',
-          }}
+        <section 
+          id="contact"
+        style={{
+          background: 'rgba(255, 255, 255, 0.22)',
+          backdropFilter: 'blur(20px)',
+          WebkitBackdropFilter: 'blur(20px)',
+          borderTop: '1px solid rgba(0, 0, 0, 0.1)',
+          padding: '60px 20px',
+          position: 'relative',
+          overflow: 'hidden',
+        }}
         >
-          Contáctanos
-        </h2>
+          {/* Background Grid */}
+          <div
+            style={{
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              backgroundImage: 
+                'linear-gradient(rgba(0, 0, 0, 0.03) 1px, transparent 1px), linear-gradient(90deg, rgba(0, 0, 0, 0.03) 1px, transparent 1px)',
+              backgroundSize: '50px 50px',
+              opacity: 0.5,
+              pointerEvents: 'none',
+            }}
+          />
 
-            {/* Dirección */}
-            <p style={{ color: '#000', margin: '0px 3px' }}>
-              <strong>Dirección:</strong>{' '} </p>
-              <p><a
-                href="https://www.google.com/maps/place/Vortix/@7.7992701,-72.2417878,18z/data=..."
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: '#fff', textDecoration: 'none' }}
-              >
-                Barrancas Parte Alta Calle El Mirador #1-18
-              </a></p>
-            
+          <div
+            style={{
+              maxWidth: '1200px',
+              margin: '0 auto',
+              display: 'flex',
+              alignItems: 'flex-start',
+              justifyContent: 'space-between',
+              flexWrap: 'wrap',
+              gap: '40px',
+              position: 'relative',
+              zIndex: 1,
+            }}
+          >
+            {/* Left Column: Logo */}
+            <div style={{ flex: '0 0 auto', marginBottom: '20px' }}>
+              <img
+                src="/Vortixlogo/VortixLogonobackground.png"
+                alt="VORTIX Footer Logo"
+                style={{ 
+                  width: '250px', 
+                  height: 'auto', 
+                  objectFit: 'contain',
+                  filter: 'drop-shadow(0 4px 10px rgba(0, 0, 0, 0.1))',
+                }}
+              />
+            </div>
 
-            {/* Correo electrónico */}
-            <p style={{ color: '#000', margin: '0px 3px' }}>
-              <strong>Correo electrónico:</strong>{' '}</p>
-              <p><a
-                href="mailto:vortixaccesoriosyrepuestos@gmail.com"
-                style={{ color: '#fff', textDecoration: 'none' }}
-              >
-                vortixaccesoriosyrepuestos@gmail.com
-              </a> </p>
-
-            {/* Número telefónico */}
-            <p style={{ color: '#000', margin: '0px 3px' }}>
-              <strong>Número telefónico:</strong>{' '}</p>
-             <p> <a
-                href="https://wa.me/584147516607?text=Vi%20tu%20página%20web%20y%20me%20interesa%20"
-                target="_blank"
-                rel="noopener noreferrer"
-                style={{ color: '#fff', textDecoration: 'none' }}
-              >
-                +58 414-7516607
-              </a>
-            </p>
-
-            {/* Follow Us */}
-            <div style={{ textAlign: 'left' }}>
+            {/* Right Column: Contact Info */}
+            <div style={{ 
+              flex: '1 1 auto', 
+              marginLeft: '40px',
+              minWidth: '250px',
+            }}>
               <h2
                 style={{
-                  color: '#000',
-                  fontSize: '1.5rem',
-                  marginTop: '30px',
-                  fontFamily: '"Reesha", cursive',
+                  color: '#000000',
+                  fontSize: 'clamp(2rem, 5vw, 3rem)',
+                  fontFamily: 'var(--font-orbitron)',
+                  marginBottom: '30px',
+                  textTransform: 'uppercase',
+                  letterSpacing: '2px',
                 }}
               >
-Síguenos              </h2>
+                Contáctanos
+              </h2>
 
-              <div style={{ display: 'flex', gap: '20px' }}>
-                {/* Facebook Icon */}
-                <a
-                  href="https://www.facebook.com/profile.php?id=61572657137720&mibextid=ZbWKwL"
-                  target="_blank"
-                  rel="noopener noreferrer"
+              {/* Dirección */}
+              <div style={{ marginBottom: '20px' }}>
+                <p style={{ 
+                  color: '#000000', 
+                  margin: '0 0 8px 0',
+                  fontFamily: 'var(--font-orbitron)',
+                  fontWeight: '600',
+                  fontSize: '1rem',
+                }}>
+                  <strong>Dirección:</strong>
+                </p>
+                <p style={{ margin: 0 }}>
+                  <a
+                    href="https://www.google.com/maps/place/Vortix/@7.7992701,-72.2417878,18z/data=..."
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ 
+                      color: '#333333', 
+                      textDecoration: 'none',
+                      transition: 'all 0.3s ease',
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.color = '#0080ff';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.color = '#333333';
+                    }}
+                  >
+                    Barrancas Parte Alta Calle El Mirador #1-18
+                  </a>
+                </p>
+              </div>
+
+              {/* Correo electrónico */}
+              <div style={{ marginBottom: '20px' }}>
+                <p style={{ 
+                  color: '#000000', 
+                  margin: '0 0 8px 0',
+                  fontFamily: 'var(--font-orbitron)',
+                  fontWeight: '600',
+                  fontSize: '1rem',
+                }}>
+                  <strong>Correo electrónico:</strong>
+                </p>
+                <p style={{ margin: 0 }}>
+                  <a
+                    href="mailto:vortixaccesoriosyrepuestos@gmail.com"
+                    style={{ 
+                      color: '#333333', 
+                      textDecoration: 'none',
+                      transition: 'all 0.3s ease',
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.color = '#0080ff';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.color = '#333333';
+                    }}
+                  >
+                    vortixaccesoriosyrepuestos@gmail.com
+                  </a>
+                </p>
+              </div>
+
+              {/* Número telefónico */}
+              <div style={{ marginBottom: '30px' }}>
+                <p style={{ 
+                  color: '#000000', 
+                  margin: '0 0 8px 0',
+                  fontFamily: 'var(--font-orbitron)',
+                  fontWeight: '600',
+                  fontSize: '1rem',
+                }}>
+                  <strong>Número telefónico:</strong>
+                </p>
+                <p style={{ margin: 0 }}>
+                  <a
+                    href="https://wa.me/584147516607?text=Vi%20tu%20página%20web%20y%20me%20interesa%20"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{ 
+                      color: '#333333', 
+                      textDecoration: 'none',
+                      transition: 'all 0.3s ease',
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.color = '#0080ff';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.color = '#333333';
+                    }}
+                  >
+                    +58 414-7516607
+                  </a>
+                </p>
+              </div>
+
+              {/* Follow Us */}
+              <div style={{ textAlign: 'left' }}>
+                <h3
                   style={{
-                    borderRadius: '50%',
-                    width: '40px',
-                    height: '40px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    textDecoration: 'none',
+                    color: '#000000',
+                    fontSize: '1.5rem',
+                    marginTop: '30px',
+                    marginBottom: '20px',
+                    fontFamily: 'var(--font-orbitron)',
+                    textTransform: 'uppercase',
+                    letterSpacing: '1px',
                   }}
                 >
-                  <img
-                    src="/images/fbicon.jpg"
-                    alt="Facebook"
-                    style={{ width: '40px', height: '40px' }}
+                  Síguenos
+                </h3>
 
-                  />
-                </a>
+                <div style={{ display: 'flex', gap: '20px' }}>
+                  {/* Facebook Icon */}
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61572657137720&mibextid=ZbWKwL"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      borderRadius: '50%',
+                      width: '50px',
+                      height: '50px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      textDecoration: 'none',
+                      border: '2px solid rgba(0, 0, 0, 0.1)',
+                      transition: 'all 0.3s ease',
+                      boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
+                      e.currentTarget.style.transform = 'translateY(-5px) scale(1.1)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.1)';
+                      e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                    }}
+                  >
+                    <img
+                      src="/images/fbicon.jpg"
+                      alt="Facebook"
+                      style={{ 
+                        width: '30px', 
+                        height: '30px',
+                        borderRadius: '50%',
+                      }}
+                    />
+                  </a>
 
-                {/* Instagram Icon */}
-                <a
-                  href="https://www.instagram.com/vortixpartsandaccesories?igsh=MW1rMWJxMWpsYzV4dw=="
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{
-                    borderRadius: '50%',
-                    width: '40px',
-                    height: '40px',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    textDecoration: 'none',
-                  }}
-                >
-                  <img
-                    src="/images/iglogo.png"
-                    alt="Instagram"
-                    style={{ width: '40px', height: '40px' }}
-                  />
-                </a>
+                  {/* Instagram Icon */}
+                  <a
+                    href="https://www.instagram.com/vortixpartsandaccesories?igsh=MW1rMWJxMWpsYzV4dw=="
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    style={{
+                      borderRadius: '50%',
+                      width: '50px',
+                      height: '50px',
+                      display: 'flex',
+                      alignItems: 'center',
+                      justifyContent: 'center',
+                      textDecoration: 'none',
+                      border: '2px solid rgba(0, 0, 0, 0.1)',
+                      transition: 'all 0.3s ease',
+                      boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.15)';
+                      e.currentTarget.style.transform = 'translateY(-5px) scale(1.1)';
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.1)';
+                      e.currentTarget.style.transform = 'translateY(0) scale(1)';
+                    }}
+                  >
+                    <img
+                      src="/images/iglogo.png"
+                      alt="Instagram"
+                      style={{ 
+                        width: '30px', 
+                        height: '30px',
+                        borderRadius: '50%',
+                      }}
+                    />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </div>
         </section>
       </footer>
     </>

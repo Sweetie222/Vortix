@@ -61,55 +61,35 @@ export default function ProductCard({ product }: { product: Product }) {
     <div
       className="product-card"
       style={{
-        background: 'rgba(255, 255, 255, 0.9)',
-        backdropFilter: 'blur(10px)',
-        WebkitBackdropFilter: 'blur(10px)',
+        background: '#ffffff',
         border: '1px solid rgba(0, 0, 0, 0.1)',
-        borderRadius: '12px',
-        boxShadow: '0 4px 20px rgba(0, 0, 0, 0.1)',
+        borderRadius: '4px',
+        boxShadow: '0 1px 2px rgba(0, 0, 0, 0.1)',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
-        padding: '25px',
-        minHeight: '400px',
+        padding: '16px',
+        minHeight: 'auto',
         position: 'relative',
-        transition: 'all 0.4s cubic-bezier(0.4, 0, 0.2, 1)',
+        transition: 'all 0.2s ease',
+        cursor: 'pointer',
       }}
       onMouseEnter={(e) => {
-        e.currentTarget.style.transform = 'translateY(-8px) scale(1.02)';
-        e.currentTarget.style.boxShadow = '0 12px 40px rgba(0, 0, 0, 0.15)';
-        e.currentTarget.style.borderColor = 'rgba(0, 0, 0, 0.2)';
+        e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.15)';
       }}
       onMouseLeave={(e) => {
-        e.currentTarget.style.transform = 'translateY(0) scale(1)';
-        e.currentTarget.style.boxShadow = '0 4px 20px rgba(0, 0, 0, 0.1)';
-        e.currentTarget.style.borderColor = 'rgba(0, 0, 0, 0.1)';
+        e.currentTarget.style.boxShadow = '0 1px 2px rgba(0, 0, 0, 0.1)';
       }}
     >
       {/* Top Section: Title, Image, Price */}
       <div>
-        <h3
-          style={{
-            fontSize: '1.1rem',
-            color: '#000000',
-            marginBottom: '15px',
-            textAlign: 'center',
-            fontFamily: 'var(--font-orbitron)',
-            fontWeight: '600',
-            textTransform: 'uppercase',
-            letterSpacing: '0.5px',
-          }}
-        >
-          {product.name}
-        </h3>
-
         {/* Image Carousel Container */}
-        <div style={{ marginBottom: '10px', textAlign: 'center' }}>
+        <div style={{ marginBottom: '12px', textAlign: 'center' }}>
           <div
             style={{
               position: 'relative',
-              width: '200px',
-              height: '200px',
+              width: '100%',
+              paddingBottom: '100%',
               margin: '0 auto',
             }}
           >
@@ -196,58 +176,68 @@ export default function ProductCard({ product }: { product: Product }) {
           </div>
         </div>
 
+        {/* Product Title */}
+        <h3
+          style={{
+            fontSize: '0.875rem',
+            color: '#000000',
+            marginBottom: '8px',
+            textAlign: 'left',
+            fontFamily: 'var(--font-inter)',
+            fontWeight: '400',
+            lineHeight: '1.2',
+            overflow: 'hidden',
+            textOverflow: 'ellipsis',
+            display: '-webkit-box',
+            WebkitLineClamp: 2,
+            WebkitBoxOrient: 'vertical',
+            minHeight: '2.4em',
+          }}
+        >
+          {product.name}
+        </h3>
+
         {/* Price */}
         <p
           style={{
-            fontWeight: '700',
-            fontSize: '1.3rem',
+            fontWeight: '400',
+            fontSize: '1.5rem',
             color: '#000000',
-            marginBottom: '15px',
-            textAlign: 'center',
-            fontFamily: 'var(--font-orbitron)',
+            marginBottom: '8px',
+            textAlign: 'left',
+            fontFamily: 'var(--font-inter)',
           }}
         >
           {product.price}
         </p>
       </div>
 
-      {/* Bottom Section: Buttons (side-by-side, centered) */}
+      {/* Bottom Section: Buy Button */}
       <div
         style={{
-          display: 'flex',
-          justifyContent: 'center',
-          gap: '10px',
-          marginTop: 'auto',
-          position: 'relative',
-          zIndex: 1000,
+          marginTop: '12px',
         }}
       >
         <button 
           style={{
             width: '100%',
-            background: '#0080ff',
+            background: '#3483fa',
             color: '#ffffff',
-            border: '2px solid #0080ff',
-            borderRadius: '8px',
-            padding: '14px 24px',
+            border: 'none',
+            borderRadius: '6px',
+            padding: '10px 16px',
             cursor: 'pointer',
-            fontWeight: '700',
-            fontFamily: 'var(--font-orbitron)',
-            textTransform: 'uppercase',
-            letterSpacing: '1px',
-            fontSize: '0.9rem',
-            position: 'relative',
-            transition: 'all 0.3s ease',
-            boxShadow: '0 4px 15px rgba(0, 128, 255, 0.3)',
+            fontWeight: '600',
+            fontFamily: 'var(--font-inter)',
+            fontSize: '0.875rem',
+            transition: 'all 0.2s ease',
           }}
           onClick={handleBuyClick}
           onMouseEnter={(e) => {
-            e.currentTarget.style.boxShadow = '0 8px 25px rgba(0, 128, 255, 0.5)';
-            e.currentTarget.style.transform = 'translateY(-2px)';
+            e.currentTarget.style.background = '#2968c8';
           }}
           onMouseLeave={(e) => {
-            e.currentTarget.style.boxShadow = '0 4px 15px rgba(0, 128, 255, 0.3)';
-            e.currentTarget.style.transform = 'translateY(0)';
+            e.currentTarget.style.background = '#3483fa';
           }}
         >
           Comprar

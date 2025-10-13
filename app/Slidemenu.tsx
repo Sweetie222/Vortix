@@ -23,6 +23,33 @@ export default function SlideMenu() {
             opacity: 1;
           }
         }
+        
+        @media (max-width: 768px) {
+          .dropdown-menu {
+            height: auto !important;
+            min-height: 200px !important;
+            max-height: 40vh !important;
+            padding: 30px 20px !important;
+          }
+          .dropdown-nav {
+            gap: 20px !important;
+          }
+          .menu-link {
+            font-size: 1.5rem !important;
+            letter-spacing: 1px !important;
+            padding-left: 10px !important;
+          }
+        }
+        
+        @media (max-width: 480px) {
+          .dropdown-menu {
+            padding: 20px 15px !important;
+            min-height: 180px !important;
+          }
+          .menu-link {
+            font-size: 1.25rem !important;
+          }
+        }
       `}</style>
       {/* HEADER - Ultra Compact Black Navbar */}
       <header
@@ -121,9 +148,10 @@ export default function SlideMenu() {
         </div>
       </header>
 
-      {/* DROPDOWN MENU PANEL - Glassmorphic Slide */}
+      {/* DROPDOWN MENU PANEL - Responsive */}
       {menuOpen && (
         <div
+          className="dropdown-menu"
           style={{
             position: 'fixed',
             top: '50px',
@@ -144,6 +172,7 @@ export default function SlideMenu() {
         >
         {/* NAVIGATION LINKS */}
         <nav
+          className="dropdown-nav"
           style={{
             display: 'flex',
             flexDirection: 'column',
@@ -152,6 +181,7 @@ export default function SlideMenu() {
         >
           <a
             href="#products"
+            className="menu-link"
             style={{
               color: '#ffffff',
               textDecoration: 'none',
@@ -181,6 +211,7 @@ export default function SlideMenu() {
           </a>
           <a
             href="#contact"
+            className="menu-link"
             style={{
               color: '#ffffff',
               textDecoration: 'none',

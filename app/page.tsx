@@ -188,16 +188,39 @@ export default function MyMenu() {
             />
           </div>
 
-          {/* Products Grid */}
+          {/* Products Grid - MercadoLibre Style */}
           <div
             style={{
               display: 'grid',
-              gridTemplateColumns: 'repeat(auto-fill, minmax(280px, 1fr))',
-              gap: '30px',
+              gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
+              gap: '16px',
               position: 'relative',
               zIndex: 10,
             }}
           >
+            <style jsx>{`
+              @media (min-width: 1200px) {
+                div {
+                  grid-template-columns: repeat(5, 1fr) !important;
+                }
+              }
+              @media (min-width: 768px) and (max-width: 1199px) {
+                div {
+                  grid-template-columns: repeat(3, 1fr) !important;
+                }
+              }
+              @media (min-width: 480px) and (max-width: 767px) {
+                div {
+                  grid-template-columns: repeat(2, 1fr) !important;
+                }
+              }
+              @media (max-width: 479px) {
+                div {
+                  grid-template-columns: repeat(2, 1fr) !important;
+                  gap: 8px !important;
+                }
+              }
+            `}</style>
             {products.map((product) => (
               <ProductCard key={product.ID} product={product} />
             ))}
@@ -205,10 +228,48 @@ export default function MyMenu() {
         </section>
       </main>
 
-      {/* FOOTER - Cyberpunk Glassmorphic */}
+      {/* FOOTER - Responsive */}
       <footer>
+        <style jsx>{`
+          @media (max-width: 768px) {
+            .footer-section {
+              padding: 40px 15px !important;
+            }
+            .footer-content {
+              gap: 30px !important;
+            }
+            .footer-logo {
+              width: 180px !important;
+              margin: 0 auto !important;
+              display: block !important;
+            }
+            .footer-contact {
+              margin-left: 0 !important;
+            }
+            .footer-title {
+              font-size: 1.75rem !important;
+              margin-bottom: 20px !important;
+              text-align: center !important;
+            }
+          }
+          @media (max-width: 480px) {
+            .footer-section {
+              padding: 30px 15px !important;
+            }
+            .footer-content {
+              gap: 20px !important;
+            }
+            .footer-logo {
+              width: 150px !important;
+            }
+            .footer-title {
+              font-size: 1.5rem !important;
+            }
+          }
+        `}</style>
         <section 
           id="contact"
+          className="footer-section"
         style={{
           background: 'rgba(255, 255, 255, 0.22)',
           backdropFilter: 'blur(20px)',
@@ -236,6 +297,7 @@ export default function MyMenu() {
           />
 
           <div
+            className="footer-content"
             style={{
               maxWidth: '1200px',
               margin: '0 auto',
@@ -253,6 +315,7 @@ export default function MyMenu() {
               <img
                 src="/Vortixlogo/VortixLogonobackground.png"
                 alt="VORTIX Footer Logo"
+                className="footer-logo"
                 style={{ 
                   width: '250px', 
                   height: 'auto', 
@@ -263,15 +326,19 @@ export default function MyMenu() {
             </div>
 
             {/* Right Column: Contact Info */}
-            <div style={{ 
-              flex: '1 1 auto', 
-              marginLeft: '40px',
-              minWidth: '250px',
-            }}>
+            <div 
+              className="footer-contact"
+              style={{ 
+                flex: '1 1 auto', 
+                marginLeft: '40px',
+                minWidth: '250px',
+              }}
+            >
               <h2
+                className="footer-title"
                 style={{
                   color: '#000000',
-                  fontSize: 'clamp(2rem, 5vw, 3rem)',
+                  fontSize: 'clamp(1.5rem, 5vw, 3rem)',
                   fontFamily: 'var(--font-orbitron)',
                   marginBottom: '30px',
                   textTransform: 'uppercase',

@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useMemo, useEffect } from 'react';
+import { useState, useMemo, useEffect, Suspense } from 'react';
 import { Analytics } from "@vercel/analytics/react"
 import products from '../data/productos.json'; // Adjust path as needed
 import ProductCard from './product_card';
@@ -206,7 +206,15 @@ export default function MyMenu() {
           </div>
 
           {/* Filter Dropdown */}
-          <FilterDropdown value={selected} onChange={setSelected} />
+          <Suspense fallback={
+            <div className="sticky top-0 z-20 bg-white/90 backdrop-blur px-3 py-2">
+              <div className="inline-flex items-center gap-2 rounded-full border border-gray-200 px-3 py-2 text-sm bg-white">
+                <span className="text-gray-700">Cargando filtros...</span>
+              </div>
+            </div>
+          }>
+            <FilterDropdown value={selected} onChange={setSelected} />
+          </Suspense>
 
           {/* Products Grid - MercadoLibre Style */}
           <div

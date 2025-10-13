@@ -50,7 +50,7 @@ export default function MyMenu() {
               left: 0,
               right: 0,
               bottom: 0,
-              background: 'rgba(128, 128, 128, 0.3)',
+              background: 'rgba(0, 0, 0, 0.5)',
               zIndex: 1,
               pointerEvents: 'none',
             }}
@@ -216,7 +216,7 @@ export default function MyMenu() {
               }
               @media (max-width: 479px) {
                 div {
-                  grid-template-columns: repeat(2, 1fr) !important;
+                  grid-template-columns: repeat(3, 1fr) !important;
                   gap: 8px !important;
                 }
               }
@@ -271,7 +271,7 @@ export default function MyMenu() {
           id="contact"
           className="footer-section"
         style={{
-          background: 'rgba(255, 255, 255, 0.22)',
+          background: 'rgba(128, 128, 128, 0.3)',
           backdropFilter: 'blur(20px)',
           WebkitBackdropFilter: 'blur(20px)',
           borderTop: '1px solid rgba(0, 0, 0, 0.1)',

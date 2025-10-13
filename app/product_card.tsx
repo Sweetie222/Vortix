@@ -76,9 +76,11 @@ export default function ProductCard({ product }: { product: Product }) {
       }}
       onMouseEnter={(e) => {
         e.currentTarget.style.boxShadow = '0 8px 16px rgba(0, 0, 0, 0.15)';
+        e.currentTarget.style.transform = 'translateY(-8px)';
       }}
       onMouseLeave={(e) => {
         e.currentTarget.style.boxShadow = '0 1px 2px rgba(0, 0, 0, 0.1)';
+        e.currentTarget.style.transform = 'translateY(0)';
       }}
     >
       {/* Top Section: Title, Image, Price */}
@@ -103,71 +105,62 @@ export default function ProductCard({ product }: { product: Product }) {
             {/* Only show arrows if more than one image */}
             {imageArray.length > 1 && (
               <>
+                <style jsx>{`
+                  .arrow-button {
+                    position: absolute;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    background-color: white;
+                    border: 1px solid #e5e7eb;
+                    border-radius: 50%;
+                    width: 32px;
+                    height: 32px;
+                    cursor: pointer;
+                    font-size: 1.25rem;
+                    color: #000000;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    transition: all 0.2s ease;
+                    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+                    z-index: 10;
+                    left: -12px;
+                  }
+                  .arrow-button.right {
+                    left: auto;
+                    right: -12px;
+                  }
+                  .arrow-button:focus-visible {
+                    outline: 2px solid #3b82f6;
+                    outline-offset: 2px;
+                  }
+                  @media (min-width: 1280px) {
+                    .arrow-button {
+                      left: 8px;
+                    }
+                    .arrow-button.right {
+                      left: auto;
+                      right: 8px;
+                    }
+                    .arrow-button:hover {
+                      transform: translateY(-50%) scale(1.05);
+                      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.15);
+                    }
+                  }
+                `}</style>
                 <button
                   onClick={handlePrev}
-                  style={{
-                    position: 'absolute',
-                    top: '50%',
-                    left: '-25px',
-                    transform: 'translateY(-50%)',
-                    backgroundColor: 'rgba(0, 0, 0, 0.05)',
-                    border: '2px solid rgba(0, 0, 0, 0.2)',
-                    borderRadius: '50%',
-                    width: '35px',
-                    height: '35px',
-                    cursor: 'pointer',
-                    fontSize: '1.5rem',
-                    color: '#333333',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    transition: 'all 0.3s ease',
-                    boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.background = '#333333';
-                    e.currentTarget.style.color = '#ffffff';
-                    e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.2)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.background = 'rgba(0, 0, 0, 0.05)';
-                    e.currentTarget.style.color = '#333333';
-                    e.currentTarget.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.1)';
-                  }}
+                  className="arrow-button"
+                  aria-label="Anterior"
+                  tabIndex={0}
                 >
                   ‹
                 </button>
                 <button
                   onClick={handleNext}
-                  style={{
-                    position: 'absolute',
-                    top: '50%',
-                    right: '-25px',
-                    transform: 'translateY(-50%)',
-                    backgroundColor: 'rgba(0, 0, 0, 0.05)',
-                    border: '2px solid rgba(0, 0, 0, 0.2)',
-                    borderRadius: '50%',
-                    width: '35px',
-                    height: '35px',
-                    cursor: 'pointer',
-                    fontSize: '1.5rem',
-                    color: '#333333',
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'center',
-                    transition: 'all 0.3s ease',
-                    boxShadow: '0 2px 8px rgba(0, 0, 0, 0.1)',
-                  }}
-                  onMouseEnter={(e) => {
-                    e.currentTarget.style.background = '#333333';
-                    e.currentTarget.style.color = '#ffffff';
-                    e.currentTarget.style.boxShadow = '0 4px 12px rgba(0, 0, 0, 0.2)';
-                  }}
-                  onMouseLeave={(e) => {
-                    e.currentTarget.style.background = 'rgba(0, 0, 0, 0.05)';
-                    e.currentTarget.style.color = '#333333';
-                    e.currentTarget.style.boxShadow = '0 2px 8px rgba(0, 0, 0, 0.1)';
-                  }}
+                  className="arrow-button right"
+                  aria-label="Siguiente"
+                  tabIndex={0}
                 >
                   ›
                 </button>

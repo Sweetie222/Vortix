@@ -1,13 +1,30 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useMemo, useEffect } from 'react';
 import { Analytics } from "@vercel/analytics/react"
 import products from '../data/productos.json'; // Adjust path as needed
 import ProductCard from './product_card';
 import SlideMenu from './Slidemenu';
+import FilterDropdown from './FilterDropdown';
+import { filterProducts, normalizeCategory, type Category } from './filters.types';
 
 export default function MyMenu() {
   const [menuOpen, setMenuOpen] = useState(false);
+  
+  // Filter state
+  const [selected, setSelected] = useState<Category | "Todos">(() => {
+    // Lee ?cat= de la URL al cargar (client-side)
+    if (typeof window === "undefined") return "Todos";
+    const qs = new URLSearchParams(window.location.search);
+    const cat = qs.get("cat");
+    return (cat as Category) ?? "Todos";
+  });
+
+  // Filtrar productos
+  const filteredProducts = useMemo(
+    () => filterProducts(products as any, { selected }),
+    [selected]
+  );
 
   return (
     <>
@@ -188,14 +205,20 @@ export default function MyMenu() {
             />
           </div>
 
+          {/* Filter Dropdown */}
+          <FilterDropdown value={selected} onChange={setSelected} />
+
           {/* Products Grid - MercadoLibre Style */}
           <div
+            id="productos-grid"
+            aria-live="polite"
             style={{
               display: 'grid',
               gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))',
               gap: '16px',
               position: 'relative',
               zIndex: 10,
+              marginTop: '20px',
             }}
           >
             <style jsx>{`
@@ -221,7 +244,7 @@ export default function MyMenu() {
                 }
               }
             `}</style>
-            {products.map((product) => (
+            {filteredProducts.map((product) => (
               <ProductCard key={product.ID} product={product} />
             ))}
           </div>

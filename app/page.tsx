@@ -1,6 +1,5 @@
 import type { Metadata } from 'next';
 import Hero from '@/components/Hero';
-import TrustStrip from '@/components/TrustStrip';
 import CategoryChips from '@/components/CategoryChips';
 import CatalogBrowser from '@/components/CatalogBrowser';
 import JsonLd from '@/components/JsonLd';
@@ -17,7 +16,6 @@ export default function HomePage() {
     <>
       <main id="contenido">
         <Hero />
-        <TrustStrip />
 
         <section className={styles.catalog} id="catalogo">
           <div className="container">

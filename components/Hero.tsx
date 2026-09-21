@@ -1,6 +1,5 @@
 import Image from 'next/image';
 import Link from 'next/link';
-import { SITE } from '@/lib/site';
 import { whatsappGeneral } from '@/lib/whatsapp';
 import WhatsAppIcon from './WhatsAppIcon';
 import styles from './Hero.module.css';
@@ -18,9 +17,6 @@ export default function Hero() {
       />
       <div className={styles.scrim} />
       <div className={`container ${styles.inner}`}>
-        <p className={`eyebrow ${styles.eyebrowOnDark}`}>
-          {SITE.address.locality} · {SITE.address.municipality} · {SITE.address.region}
-        </p>
         <h1 className={styles.title}>Accesorios y repuestos para moto</h1>
         <div className={styles.actions}>
           <Link className="btn btn-onDark" href="/productos">

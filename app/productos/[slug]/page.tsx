@@ -22,8 +22,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
 
   const price = product.priceUsd !== null ? ` — ${formatUsd(product.priceUsd)}` : '';
   const description =
-    `${product.name}${price} en ${SITE.name}, ${SITE.address.locality}, ${SITE.address.municipality}, ` +
-    `estado ${SITE.address.region}. Pedidos por WhatsApp al ${SITE.phone}.`;
+    `${product.name}${price} en ${SITE.name}. Pedidos por WhatsApp al ${SITE.phone}.`;
 
   return {
     title: `${product.name}${price}`,

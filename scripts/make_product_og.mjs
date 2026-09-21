@@ -82,7 +82,7 @@ for (const p of products) {
        <text x="${PAD}" y="${priceTop}" font-family="Helvetica, Arial, sans-serif"
              font-size="${priceSize}" font-weight="bold" fill="#FF5A00">${esc(priceText)}</text>
        <text x="${PAD}" y="${H - 64}" font-family="Helvetica, Arial, sans-serif" font-size="21"
-             fill="#7B8186">Barrancas, Táchira · Pedidos por WhatsApp</text>
+             fill="#7B8186">Pedidos por WhatsApp</text>
      </svg>`,
   );
 

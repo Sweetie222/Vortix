@@ -19,8 +19,8 @@ export default function Footer() {
               sizes="132px"
             />
             <p className={styles.blurb}>
-              Accesorios y repuestos para moto en {SITE.address.locality},{' '}
-              {SITE.address.municipality}, estado {SITE.address.region}.
+              Accesorios y repuestos para moto. Precios en dólares a la vista y pedidos por
+              WhatsApp.
             </p>
             <div className={styles.social}>
               <a
@@ -73,15 +73,6 @@ export default function Footer() {
           <div>
             <h2 className={styles.heading}>Contacto</h2>
             <address className={styles.address}>
-              <a className={styles.link} href={SITE.maps} target="_blank" rel="noopener noreferrer">
-                {SITE.address.street}
-                <br />
-                {SITE.address.locality}, {SITE.address.municipality}
-                <br />
-                Estado {SITE.address.region}, {SITE.address.countryName}
-              </a>
-              <br />
-              <br />
               <a className={styles.link} href={`https://wa.me/${SITE.whatsapp}`} target="_blank" rel="noopener noreferrer">
                 {SITE.phone}
               </a>

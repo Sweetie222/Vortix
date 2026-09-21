@@ -4,7 +4,6 @@ import { useMemo, useState } from 'react';
 import Image from 'next/image';
 import type { Product } from '@/lib/catalog';
 import { formatUsd } from '@/lib/format';
-import { SITE } from '@/lib/site';
 import { productUrl, whatsappProduct } from '@/lib/whatsapp';
 import PriceTag from './PriceTag';
 import WhatsAppIcon from './WhatsAppIcon';
@@ -126,12 +125,7 @@ export default function ProductDetail({
           </a>
           <p className={styles.help}>
             ¿No sabe si le sirve a su moto? Mándenos el modelo por WhatsApp y le confirmamos antes
-            de pagar. También puede pasar por la tienda en {SITE.address.locality} y verlo en
-            persona:{' '}
-            <a className={styles.helpLink} href={SITE.maps} target="_blank" rel="noopener noreferrer">
-              cómo llegar
-            </a>
-            .
+            de pagar.
           </p>
         </div>
       </div>

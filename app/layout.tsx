@@ -27,7 +27,7 @@ const barlow = Barlow({
 export const metadata: Metadata = {
   metadataBase: new URL(SITE.url),
   title: {
-    default: 'VORTIX | Accesorios y repuestos para moto en Táchira',
+    default: 'VORTIX | Accesorios y repuestos para moto',
     template: '%s | VORTIX',
   },
   description: SITE.description,
@@ -39,7 +39,7 @@ export const metadata: Metadata = {
     locale: SITE.locale,
     siteName: SITE.name,
     url: SITE.url,
-    title: 'VORTIX | Accesorios y repuestos para moto en Táchira',
+    title: 'VORTIX | Accesorios y repuestos para moto',
     description: SITE.description,
   },
   twitter: { card: 'summary_large_image' },

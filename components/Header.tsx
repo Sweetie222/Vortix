@@ -8,10 +8,7 @@ import { whatsappGeneral } from '@/lib/whatsapp';
 import WhatsAppIcon from './WhatsAppIcon';
 import styles from './Header.module.css';
 
-const NAV = [
-  { href: '/productos', label: 'Catálogo' },
-  { href: '/tienda', label: 'Tienda' },
-];
+const NAV = [{ href: '/productos', label: 'Catálogo' }];
 
 export default function Header() {
   const pathname = usePathname();

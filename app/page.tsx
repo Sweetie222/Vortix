@@ -3,7 +3,6 @@ import Hero from '@/components/Hero';
 import TrustStrip from '@/components/TrustStrip';
 import CategoryChips from '@/components/CategoryChips';
 import CatalogBrowser from '@/components/CatalogBrowser';
-import StoreCard from '@/components/StoreCard';
 import JsonLd from '@/components/JsonLd';
 import { PRODUCTS } from '@/lib/catalog';
 import { itemListSchema } from '@/lib/schema';
@@ -29,8 +28,6 @@ export default function HomePage() {
             <CatalogBrowser products={PRODUCTS} />
           </div>
         </section>
-
-        <StoreCard />
       </main>
       <JsonLd data={itemListSchema('Catálogo VORTIX', PRODUCTS)} />
     </>

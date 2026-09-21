@@ -1,5 +1,4 @@
 import { PRODUCTS } from '@/lib/catalog';
-import { SITE } from '@/lib/site';
 import styles from './TrustStrip.module.css';
 
 /**
@@ -8,7 +7,6 @@ import styles from './TrustStrip.module.css';
  * until the owner confirms them — an unverifiable trust badge is worse than none.
  */
 const ITEMS = [
-  { label: 'Tienda física', note: `${SITE.address.locality}, ${SITE.address.region}` },
   { label: 'Precio a la vista', note: 'Todos los precios en dólares' },
   { label: 'Atención por WhatsApp', note: 'Respuesta directa, sin formularios' },
   { label: `${PRODUCTS.length} productos`, note: 'Todo el catálogo publicado' },

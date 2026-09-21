@@ -10,11 +10,6 @@ export default function StoreCard({ heading = 'h2' }: { heading?: 'h1' | 'h2' })
       <div className={`container ${styles.inner}`}>
         <div>
           <Heading className={styles.title}>Visítenos en {SITE.address.locality}</Heading>
-          <p className={styles.lead}>
-            {SITE.name} es una tienda física en {SITE.address.locality},{' '}
-            {SITE.address.municipality}, estado {SITE.address.region}. Puede venir a ver los
-            productos antes de comprar, o escribirnos por WhatsApp y coordinamos el pedido.
-          </p>
           <address className={styles.address}>
             <span className={styles.strong}>{SITE.address.street}</span>
             <br />

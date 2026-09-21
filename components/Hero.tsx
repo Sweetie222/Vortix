@@ -5,7 +5,7 @@ import { whatsappGeneral } from '@/lib/whatsapp';
 import WhatsAppIcon from './WhatsAppIcon';
 import styles from './Hero.module.css';
 
-export default function Hero({ productCount }: { productCount: number }) {
+export default function Hero() {
   return (
     <section className={styles.hero}>
       <Image
@@ -22,10 +22,6 @@ export default function Hero({ productCount }: { productCount: number }) {
           {SITE.address.locality} · {SITE.address.municipality} · {SITE.address.region}
         </p>
         <h1 className={styles.title}>Accesorios y repuestos para moto</h1>
-        <p className={styles.sub}>
-          {productCount} productos con el precio a la vista. Tienda física en{' '}
-          {SITE.address.locality} y pedidos por WhatsApp.
-        </p>
         <div className={styles.actions}>
           <Link className="btn btn-onDark" href="/productos">
             Ver el catálogo

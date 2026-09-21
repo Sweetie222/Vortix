@@ -21,7 +21,7 @@ export default function HomePage() {
     <>
       <Header />
       <main id="contenido">
-        <Hero productCount={PRODUCTS.length} />
+        <Hero />
         <TrustStrip />
 
         <section className={styles.catalog} id="catalogo">

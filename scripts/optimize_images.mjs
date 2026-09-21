@@ -1,4 +1,7 @@
 /**
+ * Maintenance script. Run with:  npm i -D sharp && node scripts/optimize_images.mjs
+ * sharp is intentionally not a project dependency — it is not needed to
+ * build the site, and Vercel supplies its own for next/image.
  * Downsize oversized source images. next/image resizes on request, but huge
  * sources still cost build time, repo size and optimizer budget — and the hero
  * and logo were being served raw because they bypassed next/image entirely.

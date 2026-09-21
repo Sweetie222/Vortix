@@ -1,4 +1,7 @@
 /**
+ * Maintenance script. Run with:  npm i -D sharp && node scripts/make_product_og.mjs
+ * sharp is intentionally not a project dependency — it is not needed to
+ * build the site, and Vercel supplies its own for next/image.
  * Per-product Open Graph cards, 1200x630.
  * Many source photos are only 200x200 — below what WhatsApp needs for a large
  * preview — so a raw product image would render as a tiny square thumb.

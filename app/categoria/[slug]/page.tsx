@@ -1,11 +1,8 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import CategoryChips from '@/components/CategoryChips';
 import CatalogBrowser from '@/components/CatalogBrowser';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import JsonLd from '@/components/JsonLd';
 import { CATEGORIES, getCategory, productsInCategory, type CategorySlug } from '@/lib/catalog';
 import { SITE } from '@/lib/site';
@@ -55,7 +52,6 @@ export default async function CategoryPage({ params }: Params) {
 
   return (
     <>
-      <Header />
       <main id="contenido" className="container">
         <Breadcrumbs trail={trail} />
         <h1 className={styles.title}>{category.name}</h1>
@@ -66,8 +62,6 @@ export default async function CategoryPage({ params }: Params) {
         <CategoryChips active={category.slug} />
         <CatalogBrowser products={products} />
       </main>
-      <Footer />
-      <FloatingWhatsApp />
       <JsonLd data={itemListSchema(category.name, products)} />
       <JsonLd
         data={breadcrumbSchema(

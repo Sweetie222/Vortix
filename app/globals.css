@@ -180,6 +180,21 @@ button {
   top: calc(8px + env(safe-area-inset-top));
 }
 
+/* The floating WhatsApp button. Fixed on the WRAPPER, not just the link:
+   a static zero-height wrapper sits at the end of the document and the App
+   Router's scroll handler will scroll to it on navigation. */
+.fab-wrap {
+  position: fixed;
+  right: 18px;
+  bottom: calc(18px + env(safe-area-inset-bottom));
+  z-index: 90;
+}
+
+/* Product pages have their own sticky order bar in that corner. */
+body:has(.productPage) .fab-wrap {
+  display: none;
+}
+
 /* Room for the fixed mobile order bar on product pages. */
 .productPage {
   padding-bottom: 96px;

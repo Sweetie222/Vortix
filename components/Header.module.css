@@ -45,13 +45,13 @@
 }
 
 .nav {
-  display: none;
-  gap: 26px;
+  display: flex;
+  gap: 14px;
 }
 
 .navLink {
   font-family: var(--font-display);
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   color: var(--ink-strong);
@@ -91,9 +91,25 @@
   }
 }
 
+/* Give the links room on narrow phones by dropping the brand tagline. */
+@media (max-width: 480px) {
+  .tagline {
+    display: none;
+  }
+  .wordmark {
+    font-size: 1.0625rem;
+  }
+  .inner {
+    gap: 12px;
+  }
+}
+
 @media (min-width: 860px) {
   .nav {
-    display: flex;
+    gap: 26px;
+  }
+  .navLink {
+    font-size: 0.875rem;
   }
   .ctaLabel {
     display: inline;

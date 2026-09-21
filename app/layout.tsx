@@ -5,6 +5,9 @@ import './globals.css';
 import { SITE } from '@/lib/site';
 import { organizationAndStore } from '@/lib/schema';
 import JsonLd from '@/components/JsonLd';
+import Header from '@/components/Header';
+import Footer from '@/components/Footer';
+import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 
 /** Condensed uppercase display face — headings, buttons, product names. */
 const fjalla = Fjalla_One({
@@ -59,7 +62,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
     <html lang={SITE.lang} className={`${fjalla.variable} ${barlow.variable}`}>
       <body>
         <JsonLd data={organizationAndStore()} />
+        <Header />
         {children}
+        <Footer />
+        <FloatingWhatsApp />
         <Analytics />
       </body>
     </html>

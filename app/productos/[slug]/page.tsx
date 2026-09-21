@@ -1,7 +1,5 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import ProductDetail from '@/components/ProductDetail';
 import RelatedProducts from '@/components/RelatedProducts';
@@ -66,13 +64,11 @@ export default async function ProductPage({ params }: Params) {
 
   return (
     <>
-      <Header />
       <main id="contenido" className="container productPage">
         <Breadcrumbs trail={trail} />
         <ProductDetail product={product} />
         <RelatedProducts products={relatedProducts(product)} />
       </main>
-      <Footer />
       <JsonLd data={productSchema(product)} />
       <JsonLd
         data={breadcrumbSchema(

@@ -1,8 +1,4 @@
 .fab {
-  position: fixed;
-  right: 18px;
-  bottom: calc(18px + env(safe-area-inset-bottom));
-  z-index: 90;
   display: flex;
   align-items: center;
   justify-content: center;

@@ -1,10 +1,7 @@
 import type { Metadata } from 'next';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import CategoryChips from '@/components/CategoryChips';
 import CatalogBrowser from '@/components/CatalogBrowser';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import JsonLd from '@/components/JsonLd';
 import { PRODUCTS } from '@/lib/catalog';
 import { SITE } from '@/lib/site';
@@ -22,7 +19,6 @@ export default function ProductosPage() {
 
   return (
     <>
-      <Header />
       <main id="contenido" className="container">
         <Breadcrumbs trail={trail} />
         <h1 className={styles.title}>Catálogo completo</h1>
@@ -32,8 +28,6 @@ export default function ProductosPage() {
         <CategoryChips />
         <CatalogBrowser products={PRODUCTS} />
       </main>
-      <Footer />
-      <FloatingWhatsApp />
       <JsonLd data={itemListSchema('Catálogo completo VORTIX', PRODUCTS)} />
       <JsonLd
         data={breadcrumbSchema(

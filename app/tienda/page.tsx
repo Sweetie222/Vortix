@@ -1,9 +1,6 @@
 import type { Metadata } from 'next';
-import Header from '@/components/Header';
-import Footer from '@/components/Footer';
 import Breadcrumbs from '@/components/Breadcrumbs';
 import StoreCard from '@/components/StoreCard';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import JsonLd from '@/components/JsonLd';
 import { ADDRESS_ONE_LINE, SITE } from '@/lib/site';
 import { breadcrumbSchema } from '@/lib/schema';
@@ -19,15 +16,12 @@ export default function TiendaPage() {
 
   return (
     <>
-      <Header />
       <main id="contenido">
         <div className="container">
           <Breadcrumbs trail={trail} />
         </div>
         <StoreCard heading="h1" />
       </main>
-      <Footer />
-      <FloatingWhatsApp />
       <JsonLd
         data={breadcrumbSchema(
           trail.map((t) => ({ name: t.name, url: t.href ? `${SITE.url}${t.href}` : undefined })),

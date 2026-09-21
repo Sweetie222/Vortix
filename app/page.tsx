@@ -1,12 +1,9 @@
 import type { Metadata } from 'next';
-import Header from '@/components/Header';
 import Hero from '@/components/Hero';
 import TrustStrip from '@/components/TrustStrip';
 import CategoryChips from '@/components/CategoryChips';
 import CatalogBrowser from '@/components/CatalogBrowser';
 import StoreCard from '@/components/StoreCard';
-import Footer from '@/components/Footer';
-import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import JsonLd from '@/components/JsonLd';
 import { PRODUCTS } from '@/lib/catalog';
 import { itemListSchema } from '@/lib/schema';
@@ -19,7 +16,6 @@ export const metadata: Metadata = {
 export default function HomePage() {
   return (
     <>
-      <Header />
       <main id="contenido">
         <Hero />
         <TrustStrip />
@@ -40,8 +36,6 @@ export default function HomePage() {
 
         <StoreCard />
       </main>
-      <Footer />
-      <FloatingWhatsApp />
       <JsonLd data={itemListSchema('Catálogo VORTIX', PRODUCTS)} />
     </>
   );

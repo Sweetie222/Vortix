@@ -1,303 +1,762 @@
 [
   {
-    "ID": 1,
+    "id": 32,
+    "slug": "casco-para-moto-negro",
+    "name": "Casco para Moto Negro",
+    "priceUsd": 48.0,
+    "category": "seguridad-y-proteccion",
+    "images": [
+      "Accesorios/CarcoparaMotoNegro.jpg"
+    ],
+    "fitment": [
+      "Universal"
+    ]
+  },
+  {
+    "id": 1,
+    "slug": "casco-combat",
     "name": "Casco Combat",
-    "price": "$45.00",
-    "images": ["Accesorios/Cascocombat.png","Accesorios/Cascocombatnegro.png"],
-    "category": "Seguridad y Protección"
+    "priceUsd": 45.0,
+    "category": "seguridad-y-proteccion",
+    "images": [
+      "Accesorios/Cascocombat.png",
+      "Accesorios/Cascocombatnegro.png"
+    ],
+    "fitment": [
+      "Universal"
+    ]
   },
   {
-    "ID": 2,
-    "name": "Base antirresbalante para pata lateral de Moto",
-    "price": "$2.49",
-    "images": ["Accesorios/Baseantirresbalanteazul.png","Accesorios/Baseantirresbalanterojo.png","Accesorios/Baseantirresbalantenegra.png"],
-    "category": "Accesorios y Personalización"
+    "id": 33,
+    "slug": "casco-para-moto-fosforescente",
+    "name": "Casco para moto fosforescente",
+    "priceUsd": 42.0,
+    "category": "seguridad-y-proteccion",
+    "images": [
+      "Accesorios/CascoparaMotoFosforescente.jpg"
+    ],
+    "fitment": [
+      "Universal"
+    ]
   },
   {
-    "ID": 3,
-    "name": "Chapaletas guardabarros para moto universal Fox",
-    "price": "$1.55",
-    "images": ["Accesorios/chapaletasfox.png","Accesorios/Guardabarroazulfox.png","Accesorios/Guardabarrofoxblanco.png","Accesorios/Guardabarrofoxverde.png"],
-    "category": "Accesorios y Personalización"
-  },
-  {
-    "ID": 4,
-    "name": "Chapaletas guardabarros para moto universal Empire",
-    "price": "$1.55",
-    "images": ["Accesorios/ChapaletasEmpire.jpg"],
-    "category": "Accesorios y Personalización"
-  },
-  {
-    "ID": 5,
-    "name": "Chapaletas guardabarros para moto universal Bera",
-    "price": "$1.55",
-    "images": ["Accesorios/chapaletasBera.jpg"],
-    "category": "Accesorios y Personalización"
-  },
-  {
-    "ID": 6,
-    "name": "Gomas Anti rayones laterales para tanque de gasolina de moto",
-    "price": "$11.99",
-    "images": ["Accesorios/Gomaantirayones.png"],
-    "category": "Seguridad y Protección"
-  },
-  {
-    "ID": 7,
-    "name": "Defensas laterales para Moto",
-    "price": "$14.00",
-    "images": ["Accesorios/Defensaslateralesazul.png","Accesorios/Defensaslateralesrojo.png","Accesorios/Defensaslateralesnegro.png"],
-    "category": "Seguridad y Protección"
-  },
-  {
-    "ID": 8,
-    "name": "Porta Maleta para Moto azul, rojo y negro",
-    "price": "$7.49",
-    "images": ["Accesorios/Portamaletaazul.png","Accesorios/Portamaletarojo.png","Accesorios/Portamaletanegro.png"],
-    "category": "Accesorios y Personalización"
-  },
-  {
-    "ID": 9,
+    "id": 9,
+    "slug": "sistema-de-alarma-para-moto",
     "name": "Sistema de alarma para moto",
-    "price": "$15.99",
-    "images": ["Accesorios/Alarmaparamoto.png"],
-    "category": "Luces y Eléctricos"
+    "priceUsd": 15.99,
+    "category": "luces-y-electricos",
+    "images": [
+      "Accesorios/Alarmaparamoto.png"
+    ],
+    "fitment": [
+      "Universal"
+    ]
   },
   {
-    "ID": 10,
-    "name": "Llave con dado saca bujia para moto 19mm",
-    "price": "$2.40",
-    "images": ["Accesorios/Sacabujiaundado.png"],
-    "category": "Mecánica y Mantenimiento"
+    "id": 7,
+    "slug": "defensas-laterales-mataperro-para-moto",
+    "name": "Defensas laterales mataperro para moto",
+    "priceUsd": 14.0,
+    "category": "seguridad-y-proteccion",
+    "images": [
+      "Accesorios/Defensaslateralesazul.png",
+      "Accesorios/Defensaslateralesrojo.png",
+      "Accesorios/Defensaslateralesnegro.png"
+    ],
+    "fitment": [
+      "Universal"
+    ],
+    "colors": [
+      {
+        "name": "Azul",
+        "hex": "#1E4FB5",
+        "image": "Accesorios/Defensaslateralesazul.png"
+      },
+      {
+        "name": "Rojo",
+        "hex": "#C62828",
+        "image": "Accesorios/Defensaslateralesrojo.png"
+      },
+      {
+        "name": "Negro",
+        "hex": "#1A1A1A",
+        "image": "Accesorios/Defensaslateralesnegro.png"
+      }
+    ]
   },
   {
-    "ID": 11,
-    "name": "Saca bujia dos dados para moto 16 mm and 21mm",
-    "price": "$2.99",
-    "images": ["Accesorios/Sacabujiadosdados.png"],
-    "category": "Mecánica y Mantenimiento"
+    "id": 6,
+    "slug": "gomas-anti-rayones-laterales-para-tanque-de-gasolina-de-moto",
+    "name": "Gomas Anti rayones laterales para tanque de gasolina de moto",
+    "priceUsd": 11.99,
+    "category": "seguridad-y-proteccion",
+    "images": [
+      "Accesorios/Gomaantirayones.png"
+    ],
+    "fitment": [
+      "Universal"
+    ]
   },
   {
-    "ID": 12,
-    "name": "Filtro de gasolina para moto universal",
-    "price": "$0.25",
-    "images": ["Accesorios/Filtrodegasolina.png","Accesorios/FiltrodeGasolinaUniversal.jpg"],
-    "category": "Mecánica y Mantenimiento"
+    "id": 39,
+    "slug": "kit-de-rodaje-37t-15t",
+    "name": "Kit de rodaje 37t / 15t",
+    "priceUsd": 11.99,
+    "category": "mecanica-y-mantenimiento",
+    "images": [
+      "Accesorios/KitdeRodaje37t15t.jpg"
+    ],
+    "fitment": [
+      "Universal"
+    ]
   },
   {
-    "ID": 13,
-    "name": "Sliders para eje delantero de moto color azul.",
-    "price": "$3.50",
-    "images": ["Accesorios/Slidersazul.png","Accesorios/Slidersrojo.png"],
-    "category": "Accesorios y Personalización"
+    "id": 16,
+    "slug": "faro-explorador-rectangular-led-18w-luz-blanca-o-amarilla",
+    "name": "Faro explorador rectangular LED 18W (luz blanca o amarilla)",
+    "priceUsd": 8.0,
+    "category": "luces-y-electricos",
+    "images": [
+      "Accesorios/FaroExploradorLEDtreslupaswebsite.jpg"
+    ],
+    "fitment": [
+      "Universal"
+    ]
   },
   {
-    "ID": 14,
-    "name": "Deditos Fluorescentes Tapa Bujias",
-    "price": "$2.40",
-    "images": ["Accesorios/Deditostapabujia.png","Accesorios/ejemplodeditostapabujia.png"],
-    "category": "Accesorios y Personalización"
+    "id": 43,
+    "slug": "porta-placa-con-gomas-para-moto",
+    "name": "Porta placa con gomas para moto",
+    "priceUsd": 8.0,
+    "category": "accesorios-y-personalizacion",
+    "images": [
+      "Accesorios/PortaPlacayGomasAzul.jpg",
+      "Accesorios/PortaPlacayGomasNegro.jpg",
+      "Accesorios/PortaPlacayGomasRojo.jpg"
+    ],
+    "fitment": [
+      "Universal"
+    ],
+    "colors": [
+      {
+        "name": "Azul",
+        "hex": "#1E4FB5",
+        "image": "Accesorios/PortaPlacayGomasAzul.jpg"
+      },
+      {
+        "name": "Negro",
+        "hex": "#1A1A1A",
+        "image": "Accesorios/PortaPlacayGomasNegro.jpg"
+      },
+      {
+        "name": "Rojo",
+        "hex": "#C62828",
+        "image": "Accesorios/PortaPlacayGomasRojo.jpg"
+      }
+    ]
   },
   {
-    "ID": 15,
-    "name": "Candado tranca Disco Anti-robo para moto/bicicleta negro",
-    "price": "$4.50",
-    "images": ["Accesorios/TrancaDiscoAnti-robonegro.png","Accesorios/TrancaDiscoAntiroboDorado.jpg","Accesorios/TrancaDiscoAntiroboplateado.png","Accesorios/TrancaDiscoAntiroborojo.png"],
-    "category": "Seguridad y Protección"
-  },
-  {
-    "ID": 16,
-    "name": "Faro Explorador Rectangular Led (18 W luz blanca o amarilla)",
-    "price": "$8.00",
-    "images": ["Accesorios/FaroExploradorLEDtreslupaswebsite.jpg"],
-    "category": "Luces y Eléctricos"
-  },
-  {
-    "ID": 17,
-    "name": "Bombillo led Extra Plano Función intermitente (Luz Blanca, Amarilla, Roja, Azul)",
-    "price": "$1.00",
-    "images": ["Accesorios/BombilloledExtraPlanoFunciónintermitente.png","Accesorios/BombilloledExtraPlanoFunciónintermitenteamarilla.png","Accesorios/BombilloledExtraPlanoFunciónintermitenteblanca.png","Accesorios/BombilloledExtraPlanoFunciónintermitenteazul.png","Accesorios/BombilloledExtraPlanoFunciónintermitenterojo.png"],
-    "category": "Luces y Eléctricos"
-  },
-  {
-    "ID": 18,
-    "name": "Malla Elástica con ganchos sujetadores 40x40cm para motos",
-    "price": "$1.50",
-    "images": ["Accesorios/Mallaparamoto.png","Accesorios/Motoconmalla.png"],
-    "category": "Accesorios y Personalización"
-  },
-  {
-    "ID": 19,
-    "name": "Tornillos con arandelas decorativas tipo tunning para moto azul",
-    "price": "$0.50",
-    "images": ["Accesorios/Tornillostunningazul.png","Accesorios/Tornillostunningplateado.png","Accesorios/Tornillostunningrojo.png","Accesorios/Tornillostunningmorado.png","Accesorios/Tornillostunningnegro.png","Accesorios/Tornillostunningverde.png"],
-    "category": "Accesorios y Personalización"
-  },
-  {
-    "ID": 20,
-    "name": "Barra de Volante de colores para moto",
-    "price": "$3.50",
-    "images": ["Accesorios/Barradevolante.png"],
-    "category": "Accesorios y Personalización"
-  },
-  {
-    "ID": 21,
+    "id": 21,
+    "slug": "set-de-dos-luces-ojos-de-angel",
     "name": "Set de dos luces Ojos de ángel",
-    "price": "$8.00",
-    "images": ["Accesorios/Lucesojodeangel.png"],
-    "category": "Luces y Eléctricos"
+    "priceUsd": 8.0,
+    "category": "luces-y-electricos",
+    "images": [
+      "Accesorios/Lucesojodeangel.png"
+    ],
+    "fitment": [
+      "Universal"
+    ]
   },
   {
-    "ID": 22,
+    "id": 42,
+    "slug": "pechera-protectora-para-moto",
+    "name": "Pechera protectora para moto",
+    "priceUsd": 7.49,
+    "category": "seguridad-y-proteccion",
+    "images": [
+      "Accesorios/Pechera.jpg"
+    ],
+    "fitment": [
+      "Universal"
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "porta-maleta-para-moto-azul-rojo-y-negro",
+    "name": "Porta Maleta para Moto azul, rojo y negro",
+    "priceUsd": 7.49,
+    "category": "accesorios-y-personalizacion",
+    "images": [
+      "Accesorios/Portamaletaazul.png",
+      "Accesorios/Portamaletarojo.png",
+      "Accesorios/Portamaletanegro.png"
+    ],
+    "fitment": [
+      "Universal"
+    ],
+    "colors": [
+      {
+        "name": "Azul",
+        "hex": "#1E4FB5",
+        "image": "Accesorios/Portamaletaazul.png"
+      },
+      {
+        "name": "Rojo",
+        "hex": "#C62828",
+        "image": "Accesorios/Portamaletarojo.png"
+      },
+      {
+        "name": "Negro",
+        "hex": "#1A1A1A",
+        "image": "Accesorios/Portamaletanegro.png"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "slug": "guantes-para-moto",
+    "name": "Guantes para moto",
+    "priceUsd": 5.0,
+    "category": "seguridad-y-proteccion",
+    "images": [
+      "Accesorios/GuantesParaMoto.jpg"
+    ],
+    "fitment": [
+      "Universal"
+    ]
+  },
+  {
+    "id": 15,
+    "slug": "candado-tranca-de-disco-antirrobo-para-moto-y-bicicleta",
+    "name": "Candado tranca de disco antirrobo para moto y bicicleta",
+    "priceUsd": 4.5,
+    "category": "seguridad-y-proteccion",
+    "images": [
+      "Accesorios/TrancaDiscoAnti-robonegro.png",
+      "Accesorios/TrancaDiscoAntiroboDorado.jpg",
+      "Accesorios/TrancaDiscoAntiroboplateado.png",
+      "Accesorios/TrancaDiscoAntiroborojo.png"
+    ],
+    "fitment": [
+      "Universal"
+    ],
+    "colors": [
+      {
+        "name": "Negro",
+        "hex": "#1A1A1A",
+        "image": "Accesorios/TrancaDiscoAnti-robonegro.png"
+      },
+      {
+        "name": "Dorado",
+        "hex": "#C9A227",
+        "image": "Accesorios/TrancaDiscoAntiroboDorado.jpg"
+      },
+      {
+        "name": "Plateado",
+        "hex": "#BFC4C9",
+        "image": "Accesorios/TrancaDiscoAntiroboplateado.png"
+      },
+      {
+        "name": "Rojo",
+        "hex": "#C62828",
+        "image": "Accesorios/TrancaDiscoAntiroborojo.png"
+      }
+    ]
+  },
+  {
+    "id": 22,
+    "slug": "pintura-en-spray-para-moto",
     "name": "Pintura en Spray para moto",
-    "price": "$4.50",
-    "images": ["Accesorios/Pinturaenaerosol.png"],
-    "category": "Accesorios y Personalización"
+    "priceUsd": 4.5,
+    "category": "accesorios-y-personalizacion",
+    "images": [
+      "Accesorios/Pinturaenaerosol.png"
+    ],
+    "fitment": [
+      "Universal"
+    ]
   },
   {
-    "ID": 23,
+    "id": 29,
+    "slug": "bombillo-lupa-doble-contacto-blanco-amarillo",
+    "name": "Bombillo lupa doble contacto blanco/amarillo",
+    "priceUsd": 3.99,
+    "category": "luces-y-electricos",
+    "images": [
+      "Accesorios/BombilloLupaDobleContactoBlancoAmarillo.jpg"
+    ],
+    "fitment": [
+      "Universal"
+    ]
+  },
+  {
+    "id": 20,
+    "slug": "barra-de-volante-de-colores-para-moto",
+    "name": "Barra de Volante de colores para moto",
+    "priceUsd": 3.5,
+    "category": "accesorios-y-personalizacion",
+    "images": [
+      "Accesorios/Barradevolante.png"
+    ],
+    "fitment": [
+      "Universal"
+    ]
+  },
+  {
+    "id": 23,
+    "slug": "forro-para-moto",
     "name": "Forro para moto",
-    "price": "$3.50",
-    "images": ["Accesorios/forrodemoto.png"],
-    "category": "Accesorios y Personalización"
+    "priceUsd": 3.5,
+    "category": "accesorios-y-personalizacion",
+    "images": [
+      "Accesorios/forrodemoto.png"
+    ],
+    "fitment": [
+      "Universal"
+    ]
   },
   {
-    "ID": 24,
-    "name": "Anti Spiche",
-    "price": "$2.49",
-    "images": ["Accesorios/AntiSpiche.jpg"],
-    "category": "Mecánica y Mantenimiento"
+    "id": 13,
+    "slug": "sliders-para-eje-delantero-de-moto",
+    "name": "Sliders para eje delantero de moto",
+    "priceUsd": 3.5,
+    "category": "accesorios-y-personalizacion",
+    "images": [
+      "Accesorios/Slidersazul.png",
+      "Accesorios/Slidersrojo.png"
+    ],
+    "fitment": [
+      "Universal"
+    ],
+    "colors": [
+      {
+        "name": "Azul",
+        "hex": "#1E4FB5",
+        "image": "Accesorios/Slidersazul.png"
+      },
+      {
+        "name": "Rojo",
+        "hex": "#C62828",
+        "image": "Accesorios/Slidersrojo.png"
+      }
+    ]
   },
   {
-    "ID": 25,
-    "name": "Asistente de Acelerador",
-    "price": "$0.99",
-    "images": ["Accesorios/AsistentedeAcelerador.jpg"],
-    "category": "Mecánica y Mantenimiento"
+    "id": 26,
+    "slug": "balaclava-para-cabello-largo-mujer",
+    "name": "Balaclava para cabello largo (mujer)",
+    "priceUsd": 3.0,
+    "category": "accesorios-y-personalizacion",
+    "images": [
+      "Accesorios/BalaclaveparaCabelloMujer.jpg"
+    ],
+    "fitment": [
+      "Universal"
+    ]
   },
   {
-    "ID": 26,
-    "name": "Balaclava para Cabello Mujer",
-    "price": "$3.00",
-    "images": ["Accesorios/BalaclaveparaCabelloMujer.jpg"],
-    "category": "Accesorios y Personalización"
+    "id": 31,
+    "slug": "bujia-ngk-punta-de-diamante",
+    "name": "Bujía NGK punta de diamante",
+    "priceUsd": 2.99,
+    "category": "mecanica-y-mantenimiento",
+    "images": [
+      "Accesorios/BujiaNGKPuntadeDiamante.jpg"
+    ],
+    "fitment": [
+      "Universal"
+    ]
   },
   {
-    "ID": 27,
-    "name": "Bombillo de Un Contacto Strober",
-    "price": "$1.49",
-    "images": ["Accesorios/BombillodeUnContactoStrober.jpg"],
-    "category": "Luces y Eléctricos"
+    "id": 44,
+    "slug": "protector-de-tanque-para-moto",
+    "name": "Protector de tanque para moto",
+    "priceUsd": 2.99,
+    "category": "seguridad-y-proteccion",
+    "images": [
+      "Accesorios/ProtectordeTanque.jpg"
+    ],
+    "fitment": [
+      "Universal"
+    ]
   },
   {
-    "ID": 28,
-    "name": "Bombillo Doble Contacto Fijo y Flash",
-    "price": "$1.25",
-    "images": ["Accesorios/BombilloDobleContactoFijoyFlash.jpg"],
-    "category": "Luces y Eléctricos"
+    "id": 11,
+    "slug": "saca-bujia-dos-dados-para-moto-16mm-y-21mm",
+    "name": "Saca bujía dos dados para moto 16mm y 21mm",
+    "priceUsd": 2.99,
+    "category": "mecanica-y-mantenimiento",
+    "images": [
+      "Accesorios/Sacabujiadosdados.png"
+    ],
+    "fitment": [
+      "Universal"
+    ]
   },
   {
-    "ID": 29,
-    "name": "Bombillo Lupa Doble Contacto Blanco Amarillo",
-    "price": "$3.99",
-    "images": ["Accesorios/BombilloLupaDobleContactoBlancoAmarillo.jpg"],
-    "category": "Luces y Eléctricos"
+    "id": 24,
+    "slug": "anti-espiche-para-caucho-de-moto",
+    "name": "Anti Espiche para caucho de moto",
+    "priceUsd": 2.49,
+    "category": "mecanica-y-mantenimiento",
+    "images": [
+      "Accesorios/AntiSpiche.jpg"
+    ],
+    "fitment": [
+      "Universal"
+    ]
   },
   {
-    "ID": 30,
-    "name": "Botas Para Lluvia",
-    "price": "$0",
-    "images": ["Accesorios/BotasParaLluvia.jpg"],
-    "category": "Seguridad y Protección"
+    "id": 2,
+    "slug": "base-antirresbalante-para-pata-lateral-de-moto",
+    "name": "Base antirresbalante para pata lateral de Moto",
+    "priceUsd": 2.49,
+    "category": "accesorios-y-personalizacion",
+    "images": [
+      "Accesorios/Baseantirresbalanteazul.png",
+      "Accesorios/Baseantirresbalanterojo.png",
+      "Accesorios/Baseantirresbalantenegra.png"
+    ],
+    "fitment": [
+      "Universal"
+    ],
+    "colors": [
+      {
+        "name": "Azul",
+        "hex": "#1E4FB5",
+        "image": "Accesorios/Baseantirresbalanteazul.png"
+      },
+      {
+        "name": "Rojo",
+        "hex": "#C62828",
+        "image": "Accesorios/Baseantirresbalanterojo.png"
+      },
+      {
+        "name": "Negro",
+        "hex": "#1A1A1A",
+        "image": "Accesorios/Baseantirresbalantenegra.png"
+      }
+    ]
   },
   {
-    "ID": 31,
-    "name": "Bujia NGK Punta de Diamante",
-    "price": "$2.99",
-    "images": ["Accesorios/BujiaNGKPuntadeDiamante.jpg"],
-    "category": "Mecánica y Mantenimiento"
+    "id": 14,
+    "slug": "deditos-fluorescentes-tapa-bujias",
+    "name": "Deditos fluorescentes tapa bujías",
+    "priceUsd": 2.4,
+    "category": "accesorios-y-personalizacion",
+    "images": [
+      "Accesorios/Deditostapabujia.png",
+      "Accesorios/ejemplodeditostapabujia.png"
+    ],
+    "fitment": [
+      "Universal"
+    ]
   },
   {
-    "ID": 32,
-    "name": "Carco para Moto Negro",
-    "price": "$48.00",
-    "images": ["Accesorios/CarcoparaMotoNegro.jpg"],
-    "category": "Seguridad y Protección"
+    "id": 10,
+    "slug": "llave-con-dado-saca-bujia-para-moto-19mm",
+    "name": "Llave con dado saca bujía para moto 19mm",
+    "priceUsd": 2.4,
+    "category": "mecanica-y-mantenimiento",
+    "images": [
+      "Accesorios/Sacabujiaundado.png"
+    ],
+    "fitment": [
+      "Universal"
+    ]
   },
   {
-    "ID": 33,
-    "name": "Casco para Moto Fosforescente",
-    "price": "$42.00",
-    "images": ["Accesorios/CascoparaMotoFosforescente.jpg"],
-    "category": "Seguridad y Protección"
+    "id": 5,
+    "slug": "chapaletas-guardabarros-para-moto-universal-bera",
+    "name": "Chapaletas guardabarros para moto universal Bera",
+    "priceUsd": 1.55,
+    "category": "accesorios-y-personalizacion",
+    "images": [
+      "Accesorios/chapaletasBera.jpg"
+    ],
+    "fitment": [
+      "Bera"
+    ]
   },
   {
-    "ID": 35,
-    "name": "Filtro Conico Universal Polvo de Cobre",
-    "price": "$0.99",
-    "images": ["Accesorios/FilttroConicoUniversalPolvodeCobre.jpg"],
-    "category": "Mecánica y Mantenimiento"
+    "id": 4,
+    "slug": "chapaletas-guardabarros-para-moto-universal-empire",
+    "name": "Chapaletas guardabarros para moto universal Empire",
+    "priceUsd": 1.55,
+    "category": "accesorios-y-personalizacion",
+    "images": [
+      "Accesorios/ChapaletasEmpire.jpg"
+    ],
+    "fitment": [
+      "Empire"
+    ]
   },
   {
-    "ID": 36,
-    "name": "Goma Pedal de Freno",
-    "price": "$0.99",
-    "images": ["Accesorios/GomaPedaldeFreno.jpg"],
-    "category": "Mecánica y Mantenimiento"
+    "id": 3,
+    "slug": "chapaletas-guardabarros-para-moto-universal-fox",
+    "name": "Chapaletas guardabarros para moto universal Fox",
+    "priceUsd": 1.55,
+    "category": "accesorios-y-personalizacion",
+    "images": [
+      "Accesorios/chapaletasfox.png",
+      "Accesorios/Guardabarroazulfox.png",
+      "Accesorios/Guardabarrofoxblanco.png",
+      "Accesorios/Guardabarrofoxverde.png"
+    ],
+    "fitment": [
+      "Fox"
+    ],
+    "colors": [
+      {
+        "name": "Azul",
+        "hex": "#1E4FB5",
+        "image": "Accesorios/Guardabarroazulfox.png"
+      },
+      {
+        "name": "Blanco",
+        "hex": "#EFEFEF",
+        "image": "Accesorios/Guardabarrofoxblanco.png"
+      },
+      {
+        "name": "Verde",
+        "hex": "#3E8E4F",
+        "image": "Accesorios/Guardabarrofoxverde.png"
+      }
+    ]
   },
   {
-    "ID": 37,
-    "name": "Gomas Pedal de Cambio",
-    "price": "$0.75",
-    "images": ["Accesorios/GomasPedaldeCambio.jpg"],
-    "category": "Mecánica y Mantenimiento"
+    "id": 18,
+    "slug": "malla-elastica-con-ganchos-sujetadores-40x40cm-para-motos",
+    "name": "Malla Elástica con ganchos sujetadores 40x40cm para motos",
+    "priceUsd": 1.5,
+    "category": "accesorios-y-personalizacion",
+    "images": [
+      "Accesorios/Mallaparamoto.png",
+      "Accesorios/Motoconmalla.png"
+    ],
+    "fitment": [
+      "Universal"
+    ]
   },
   {
-    "ID": 38,
-    "name": "Guantes Para Moto",
-    "price": "$5.00",
-    "images": ["Accesorios/GuantesParaMoto.jpg"],
-    "category": "Seguridad y Protección"
+    "id": 27,
+    "slug": "bombillo-de-un-contacto-strober",
+    "name": "Bombillo de un contacto strober",
+    "priceUsd": 1.49,
+    "category": "luces-y-electricos",
+    "images": [
+      "Accesorios/BombillodeUnContactoStrober.jpg"
+    ],
+    "fitment": [
+      "Universal"
+    ]
   },
   {
-    "ID": 39,
-    "name": "Kit de Rodaje 37t 15t",
-    "price": "$11.99",
-    "images": ["Accesorios/KitdeRodaje37t15t.jpg"],
-    "category": "Mecánica y Mantenimiento"
+    "id": 28,
+    "slug": "bombillo-doble-contacto-fijo-y-flash",
+    "name": "Bombillo doble contacto fijo y flash",
+    "priceUsd": 1.25,
+    "category": "luces-y-electricos",
+    "images": [
+      "Accesorios/BombilloDobleContactoFijoyFlash.jpg"
+    ],
+    "fitment": [
+      "Universal"
+    ]
   },
   {
-    "ID": 40,
-    "name": "Luz Muelitas",
-    "price": "$0.99",
-    "images": ["Accesorios/LuzMuelitas.jpg"],
-    "category": "Luces y Eléctricos"
+    "id": 17,
+    "slug": "bombillo-led-extra-plano-con-funcion-intermitente",
+    "name": "Bombillo LED extra plano con función intermitente",
+    "priceUsd": 1.0,
+    "category": "luces-y-electricos",
+    "images": [
+      "Accesorios/BombilloledExtraPlanoFunciónintermitente.png",
+      "Accesorios/BombilloledExtraPlanoFunciónintermitenteamarilla.png",
+      "Accesorios/BombilloledExtraPlanoFunciónintermitenteblanca.png",
+      "Accesorios/BombilloledExtraPlanoFunciónintermitenteazul.png",
+      "Accesorios/BombilloledExtraPlanoFunciónintermitenterojo.png"
+    ],
+    "fitment": [
+      "Universal"
+    ],
+    "colors": [
+      {
+        "name": "Blanco",
+        "hex": "#EFEFEF",
+        "image": "Accesorios/BombilloledExtraPlanoFunciónintermitenteblanca.png"
+      },
+      {
+        "name": "Amarillo",
+        "hex": "#EFB008",
+        "image": "Accesorios/BombilloledExtraPlanoFunciónintermitenteamarilla.png"
+      },
+      {
+        "name": "Azul",
+        "hex": "#1E4FB5",
+        "image": "Accesorios/BombilloledExtraPlanoFunciónintermitenteazul.png"
+      },
+      {
+        "name": "Rojo",
+        "hex": "#C62828",
+        "image": "Accesorios/BombilloledExtraPlanoFunciónintermitenterojo.png"
+      }
+    ]
   },
   {
-    "ID": 41,
-    "name": "Malla para Asiento Moto",
-    "price": "",
-    "images": ["Accesorios/MallaparaAsientoMoto.jpg"],
-    "category": "Accesorios y Personalización"
+    "id": 25,
+    "slug": "asistente-de-acelerador",
+    "name": "Asistente de acelerador",
+    "priceUsd": 0.99,
+    "category": "mecanica-y-mantenimiento",
+    "images": [
+      "Accesorios/AsistentedeAcelerador.jpg"
+    ],
+    "fitment": [
+      "Universal"
+    ]
   },
   {
-    "ID": 42,
-    "name": "Pechera",
-    "price": "$7.49",
-    "images": ["Accesorios/Pechera.jpg"],
-    "category": "Seguridad y Protección"
+    "id": 35,
+    "slug": "filtro-conico-universal-polvo-de-cobre",
+    "name": "Filtro cónico universal polvo de cobre",
+    "priceUsd": 0.99,
+    "category": "mecanica-y-mantenimiento",
+    "images": [
+      "Accesorios/FilttroConicoUniversalPolvodeCobre.jpg"
+    ],
+    "fitment": [
+      "Universal"
+    ]
   },
   {
-    "ID": 43,
-    "name": "Porta Placa y Gomas",
-    "price": "$8.00",
-    "images": ["Accesorios/PortaPlacayGomasAzul.jpg","Accesorios/PortaPlacayGomasNegro.jpg","Accesorios/PortaPlacayGomasRojo.jpg"],
-    "category": "Accesorios y Personalización"
+    "id": 36,
+    "slug": "goma-para-pedal-de-freno",
+    "name": "Goma para pedal de freno",
+    "priceUsd": 0.99,
+    "category": "mecanica-y-mantenimiento",
+    "images": [
+      "Accesorios/GomaPedaldeFreno.jpg"
+    ],
+    "fitment": [
+      "Universal"
+    ]
   },
   {
-    "ID": 44,
-    "name": "Protector de Tanque",
-    "price": "$2.99",
-    "images": ["Accesorios/ProtectordeTanque.jpg"],
-    "category": "Seguridad y Protección"
+    "id": 40,
+    "slug": "luz-muelitas-para-moto",
+    "name": "Luz muelitas para moto",
+    "priceUsd": 0.99,
+    "category": "luces-y-electricos",
+    "images": [
+      "Accesorios/LuzMuelitas.jpg"
+    ],
+    "fitment": [
+      "Universal"
+    ]
+  },
+  {
+    "id": 37,
+    "slug": "gomas-para-pedal-de-cambio",
+    "name": "Gomas para pedal de cambio",
+    "priceUsd": 0.75,
+    "category": "mecanica-y-mantenimiento",
+    "images": [
+      "Accesorios/GomasPedaldeCambio.jpg"
+    ],
+    "fitment": [
+      "Universal"
+    ]
+  },
+  {
+    "id": 19,
+    "slug": "tornillos-con-arandelas-decorativas-tipo-tuning",
+    "name": "Tornillos con arandelas decorativas tipo tuning",
+    "priceUsd": 0.5,
+    "category": "accesorios-y-personalizacion",
+    "images": [
+      "Accesorios/Tornillostunningazul.png",
+      "Accesorios/Tornillostunningplateado.png",
+      "Accesorios/Tornillostunningrojo.png",
+      "Accesorios/Tornillostunningmorado.png",
+      "Accesorios/Tornillostunningnegro.png",
+      "Accesorios/Tornillostunningverde.png"
+    ],
+    "fitment": [
+      "Universal"
+    ],
+    "colors": [
+      {
+        "name": "Azul",
+        "hex": "#1E4FB5",
+        "image": "Accesorios/Tornillostunningazul.png"
+      },
+      {
+        "name": "Rojo",
+        "hex": "#C62828",
+        "image": "Accesorios/Tornillostunningrojo.png"
+      },
+      {
+        "name": "Negro",
+        "hex": "#1A1A1A",
+        "image": "Accesorios/Tornillostunningnegro.png"
+      },
+      {
+        "name": "Verde",
+        "hex": "#3E8E4F",
+        "image": "Accesorios/Tornillostunningverde.png"
+      },
+      {
+        "name": "Morado",
+        "hex": "#7C3AED",
+        "image": "Accesorios/Tornillostunningmorado.png"
+      },
+      {
+        "name": "Plateado",
+        "hex": "#BFC4C9",
+        "image": "Accesorios/Tornillostunningplateado.png"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "filtro-de-gasolina-para-moto-universal",
+    "name": "Filtro de gasolina para moto universal",
+    "priceUsd": 0.25,
+    "category": "mecanica-y-mantenimiento",
+    "images": [
+      "Accesorios/Filtrodegasolina.png",
+      "Accesorios/FiltrodeGasolinaUniversal.jpg"
+    ],
+    "fitment": [
+      "Universal"
+    ]
+  },
+  {
+    "id": 30,
+    "slug": "botas-para-lluvia",
+    "name": "Botas para lluvia",
+    "priceUsd": null,
+    "category": "seguridad-y-proteccion",
+    "images": [
+      "Accesorios/BotasParaLluvia.jpg"
+    ],
+    "fitment": [
+      "Universal"
+    ]
+  },
+  {
+    "id": 41,
+    "slug": "malla-para-asiento-de-moto",
+    "name": "Malla para asiento de moto",
+    "priceUsd": null,
+    "category": "accesorios-y-personalizacion",
+    "images": [
+      "Accesorios/MallaparaAsientoMoto.jpg"
+    ],
+    "fitment": [
+      "Universal"
+    ]
   }
 ]

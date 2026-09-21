@@ -1,0 +1,40 @@
+.section {
+  background: var(--paper-sub);
+  border-top: 1px solid var(--line);
+}
+
+.inner {
+  padding-block: 64px 72px;
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(1.5rem, 4vw, 2.25rem);
+}
+
+.lead {
+  margin: 16px auto 0;
+  max-width: 56ch;
+  color: var(--muted);
+  line-height: 1.7;
+  text-wrap: pretty;
+}
+
+.address {
+  font-style: normal;
+  margin-top: 24px;
+  line-height: 1.8;
+}
+
+.strong {
+  color: var(--ink-strong);
+  font-weight: 600;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 28px;
+}

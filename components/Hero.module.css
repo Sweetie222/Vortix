@@ -1,0 +1,65 @@
+.hero {
+  position: relative;
+  background: var(--ink-strong);
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.img {
+  object-fit: cover;
+  object-position: 50% 30%;
+  z-index: -2;
+}
+
+.scrim {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: linear-gradient(180deg, rgb(17 18 19 / 55%), rgb(17 18 19 / 72%));
+}
+
+.inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 340px;
+  padding-block: 56px;
+}
+
+.eyebrowOnDark {
+  color: rgb(255 255 255 / 72%);
+  margin-bottom: 18px;
+}
+
+.title {
+  color: #ffffff;
+  font-size: clamp(2rem, 7vw, 3.75rem);
+  letter-spacing: 0.005em;
+  max-width: 20ch;
+}
+
+.sub {
+  margin-top: 16px;
+  max-width: 56ch;
+  color: rgb(255 255 255 / 82%);
+  font-size: 1rem;
+  line-height: 1.6;
+  text-wrap: pretty;
+}
+
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .inner {
+    min-height: 430px;
+    padding-block: 80px;
+  }
+}

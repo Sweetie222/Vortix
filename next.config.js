@@ -1,11 +1,11 @@
-// next.config.js
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  // Enable the new `app/` directory
-  experimental: {
-    appDir: true,
+  images: {
+    formats: ['image/avif', 'image/webp'],
+    // Product tiles are small; there is no point generating 3840px variants.
+    imageSizes: [16, 32, 48, 64, 96, 128, 200, 256, 384],
+    deviceSizes: [360, 420, 640, 750, 828, 1080, 1200, 1920],
   },
-  // ... any other config you have
 };
 
 module.exports = nextConfig;

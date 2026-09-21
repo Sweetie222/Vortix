@@ -10,7 +10,7 @@ import styles from './productos.module.css';
 
 export const metadata: Metadata = {
   title: 'Catálogo de accesorios y repuestos para moto',
-  description: `Los ${PRODUCTS.length} accesorios y repuestos para moto de VORTIX, con el precio en dólares a la vista. Cascos, trancas de disco, bombillos LED, chapaletas y más.`,
+  description: `Los ${PRODUCTS.length} accesorios y repuestos para moto de VORTIX: cascos, trancas de disco, bombillos LED, chapaletas y más. Pedidos por WhatsApp.`,
   alternates: { canonical: '/productos' },
 };
 

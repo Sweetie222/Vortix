@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: Params): Promise<Metadata> {
   const category = getCategory(slug as CategorySlug);
   if (!category) return {};
   const inCategory = productsInCategory(category.slug);
-  const description = `${inCategory.length} productos de ${category.name.toLowerCase()} para moto en ${SITE.name}. Precios en dólares a la vista. Pedidos por WhatsApp.`;
+  const description = `${inCategory.length} productos de ${category.name.toLowerCase()} para moto en ${SITE.name}. Pedidos por WhatsApp.`;
   // Setting openGraph here replaces the file-convention card, so name an image.
   const image = inCategory[0] ? `/og/${inCategory[0].slug}.jpg` : '/opengraph-image.jpg';
   return {

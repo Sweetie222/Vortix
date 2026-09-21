@@ -14,7 +14,7 @@ export const SITE = {
   locale: 'es_VE',
   lang: 'es-VE',
   description:
-    'Accesorios y repuestos para moto: cascos, trancas de disco, bombillos LED, chapaletas, defensas mataperro y más. Precios en dólares a la vista. Pedidos por WhatsApp.',
+    'Accesorios y repuestos para moto: cascos, trancas de disco, bombillos LED, chapaletas, defensas mataperro y más. Pedidos por WhatsApp.',
   phone: '+58 414-7516607',
   phoneE164: '+584147516607',
   whatsapp: '584147516607',

@@ -18,10 +18,7 @@ export default function Footer() {
               className={styles.logo}
               sizes="132px"
             />
-            <p className={styles.blurb}>
-              Accesorios y repuestos para moto. Precios en dólares a la vista y pedidos por
-              WhatsApp.
-            </p>
+            <p className={styles.blurb}>Accesorios y repuestos para moto. Pedidos por WhatsApp.</p>
             <div className={styles.social}>
               <a
                 className={styles.socialLink}

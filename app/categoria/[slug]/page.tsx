@@ -55,10 +55,6 @@ export default async function CategoryPage({ params }: Params) {
       <main id="contenido" className="container">
         <Breadcrumbs trail={trail} />
         <h1 className={styles.title}>{category.name}</h1>
-        <p className={styles.lead}>
-          {products.length} {products.length === 1 ? 'producto disponible' : 'productos disponibles'}{' '}
-          en {SITE.name}, con el precio en dólares a la vista.
-        </p>
         <CategoryChips active={category.slug} />
         <CatalogBrowser products={products} />
       </main>

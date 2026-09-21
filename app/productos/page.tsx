@@ -22,9 +22,6 @@ export default function ProductosPage() {
       <main id="contenido" className="container">
         <Breadcrumbs trail={trail} />
         <h1 className={styles.title}>Catálogo completo</h1>
-        <p className={styles.lead}>
-          {PRODUCTS.length} accesorios y repuestos, con el precio a la vista en dólares.
-        </p>
         <CategoryChips />
         <CatalogBrowser products={PRODUCTS} />
       </main>

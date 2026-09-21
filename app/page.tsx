@@ -24,10 +24,6 @@ export default function HomePage() {
           <div className="container">
             <div className={styles.head}>
               <h2 className={styles.title}>Catálogo</h2>
-              <p className={styles.lead}>
-                Todo lo que tenemos, con el precio a la vista. Elija una categoría o busque
-                directamente lo que necesita.
-              </p>
             </div>
             <CategoryChips />
             <CatalogBrowser products={PRODUCTS} />
